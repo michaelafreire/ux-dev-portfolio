@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import { useIsVisible } from '../hooks/useIsVisible';
 
 function ProjectCard(props) {
   const { imageSrc, imageTitle, videoSrc, title, description, stack } = props;
+  const ref1 = useRef();
+  const isVisible1 = useIsVisible(ref1);
 
   return (
-    <div>
+    <div ref={ref1} className= {`transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
       <div className="m-4 rounded-md px-3 py-2 items-center sm:grid sm:grid-cols-6 gap-8" >
         {imageSrc &&
           <div className="sm:col-span-3 sm:flex sm:justify-end">

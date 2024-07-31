@@ -6,7 +6,7 @@ function Button(props) {
     <div>
       <a
       href={props.website}
-      className="rounded-md px-3 py-2 text-sm font-main hover:bg-pink-light text-white bg-pink sm:text-xl"
+      className="rounded-md px-3 py-2 text-sm font-main hover:bg-pink-light text-white bg-pink sm:text-xl transition duration-500 ease-out"
       target="_blank"
       rel="noopener noreferrer"
       >
