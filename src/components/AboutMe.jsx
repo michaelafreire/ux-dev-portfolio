@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useRef } from 'react';
 import Card from './Card.jsx'
 import Button from './Button.jsx'
+import { useIsVisible } from '../hooks/useIsVisible';
 
 const skillsText = (
   <div className="list-inside flex sm:flex-col justify between">
@@ -24,9 +25,12 @@ const aboutMeText = (
 )
 
 function AboutMe() {
+  const ref1 = useRef();
+  const isVisible1 = useIsVisible(ref1);
+
   return (
     <div className="min-h-screen flex items-center sm:items-end justify-center p-4" id="about-me">
-      <div className= "sm:ml-10">
+      <div ref={ref1} className= {`sm:ml-10 transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
         <div className="sm:flex">
           <Card title="Skills" description={skillsText} bg="bg-gray" text="text-pink text-m sm:text-xl"/>
           <Card title="About Me" description={aboutMeText} bg="bg-gray" text="text-black text-m sm:text-xl"/>

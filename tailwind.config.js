@@ -9,6 +9,7 @@ export default {
       'pink': '#ff0055',
       'pink-light': '#fcbcd2',
       'gray': '#f0f0f0',
+      'transparent-gray': 'rgba(240, 240, 240, 0.8)',
       'black': '#373e4c',
       'white': '#ffffff',
     },

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import { useIsVisible } from '../hooks/useIsVisible';
 
 function DropDownMenu(){
   <div className="space-y-1 px-2 pb-3 pt-2">
@@ -10,8 +11,15 @@ function DropDownMenu(){
 }
 
 function Navbar() {
+  const ref1 = useRef();
+  const isVisible1 = useIsVisible(ref1);
+  const ref2 = useRef();
+  const isVisible2 = useIsVisible(ref2);
+  const ref3 = useRef();
+  const isVisible3 = useIsVisible(ref3);
+
   return (
-    <nav className='bg-transparent-gray fixed w-full top-0 z-50'>
+    <nav className= "bg-transparent-gray fixed w-full top-0 z-50">
       <div className="mx-auto px-2 sm:px-6">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -35,9 +43,9 @@ function Navbar() {
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <a href="#" className="rounded-md px-3 py-2 text-black text-m font-main hover:text-pink">About me</a>
-                <a href="#" className="rounded-md px-3 py-2 text-black text-m font-main hover:text-pink">Projects</a>
-                <a href="#" className="rounded-md px-3 py-2 text-black text-m font-main hover:text-pink">Contact</a>
+                <a href="#about-me" ref={ref1} className= {`rounded-md px-3 py-2 text-black text-m font-main hover:text-pink transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>About me</a>
+                <a href="#projects" ref={ref2} className= {`rounded-md px-3 py-2 text-black text-m font-main hover:text-pink transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>Projects</a>
+                <a href="#contact" ref={ref3} className= {`rounded-md px-3 py-2 text-black text-m font-main hover:text-pink transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>Contact</a>
               </div>
             </div>
           </div>
