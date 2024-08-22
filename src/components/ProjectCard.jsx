@@ -32,7 +32,7 @@ function ProjectCard(props) {
         )}
         <div className="sm:col-span-3">
           <h3 className="mt-8 sm:mt-4 font-main text-black text-m sm:text-xl font-bold">{title}</h3>
-          <div className="mt-4 font-main text-m sm:text-xl max-w-lg w-full sm:max-w-xl">{description}</div>
+          <div className="mt-4 font-main text-m text-black sm:text-xl max-w-lg w-full sm:max-w-xl">{description}</div>
           <div className="mt-4 font-main text-sm sm:text-base max-w-lg w-full sm:max-w-xl">{stack}</div>
         </div>
       </div>
