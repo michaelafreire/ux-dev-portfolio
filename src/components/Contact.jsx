@@ -13,20 +13,24 @@ function Contact() {
   const isVisible2 = useIsVisible(ref2);
 
   return (
-    <div id="contact">
-      <div className="min-h-screen flex items-end justify-start px-8">
-        <div ref={ref1} className= {`transition-translate ease-in duration-500 ${isVisible1 ? "translate-x-0" : "-translate-x-6"}`}>
-          <h3 className="font-main font-bold text-black text-3xl mt-5 sm:text-5xl">Let's collaborate.</h3>
+    <div id="contact" className="p-8 sm:pl-10">
+      <div className="flex items-end justify-start">
+        <div>
+          <div ref={ref1} className= {`relative transition-translate ease-in duration-500 ${isVisible1 ? "translate-x-0" : "-translate-x-6"}`}>
+            <h3 className="pt-40 sm:pt-80 relative z-0 font-main font-bold text-black text-3xl mt-5 sm:text-5xl py-6">
+              Let's collaborate.
+            </h3>
+          </div>
           <div className="flex mt-2 sm:mt-4">
-            <FontAwesomeIcon icon={faEnvelope} className="font-main text-black text-m sm:text-xl mr-4 hover:text-pink transition duration-500 ease-out"/>
-            <FontAwesomeIcon icon={faLinkedinIn} className="font-main text-black text-m sm:text-xl mr-4 hover:text-pink transition duration-500 ease-out"/>
-            <FontAwesomeIcon icon={faGithub} className="font-main text-black text-m sm:text-xl mr-4 hover:text-pink transition duration-500 ease-out"/>
-            <FontAwesomeIcon icon={faAddressCard} className="font-main text-black text-m sm:text-xl mr-4 hover:text-pink transition duration-500 ease-out"/>
+              <FontAwesomeIcon icon={faEnvelope} className="font-main text-black text-m sm:text-xl mr-4 hover:text-pink-light transition duration-500 ease-out"/>
+              <FontAwesomeIcon icon={faLinkedinIn} className="font-main text-black text-m sm:text-xl mr-4 hover:text-pink-light transition duration-500 ease-out"/>
+              <FontAwesomeIcon icon={faGithub} className="font-main text-black text-m sm:text-xl mr-4 hover:text-pink-light transition duration-500 ease-out"/>
+              <FontAwesomeIcon icon={faAddressCard} className="font-main text-black text-m sm:text-xl mr-4 hover:text-pink-light transition duration-500 ease-out"/>
           </div>
         </div>
       </div>
       <div ref={ref2} className= {`flex justify-center transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
-        <p className="font-main text-sm sm:text-base m-8">Built using React</p>
+        <p className="font-main text-sm sm:text-base mt-8">Built using React</p>
       </div>
     </div>
   )
