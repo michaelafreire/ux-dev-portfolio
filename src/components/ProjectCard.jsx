@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useIsVisible } from '../hooks/useIsVisible';
 
 function ProjectCard(props) {
-  const { imageSrc, imageTitle, videoSrc, title, description, stack } = props;
+  const { imageSrc, imageTitle, videoSrc, title, description, stack, role } = props;
   const ref1 = useRef();
   const isVisible1 = useIsVisible(ref1);
 
@@ -30,8 +30,9 @@ function ProjectCard(props) {
             </video>
           </div>
         )}
-        <div className="sm:col-span-3">
+        <div className="sm:col-span-3 max-w-lg">
           <h3 className="mt-8 sm:mt-4 font-main text-black text-m sm:text-xl font-bold">{title}</h3>
+          <h3 className="font-main text-black text-m sm:text-xl">{role}</h3>
           <div className="mt-4 font-main text-m text-black sm:text-xl max-w-lg w-full sm:max-w-xl">{description}</div>
           <div className="mt-4 font-main text-sm sm:text-base max-w-lg w-full sm:max-w-xl">{stack}</div>
         </div>
