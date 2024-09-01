@@ -68,7 +68,7 @@ function Navbar() {
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
             <div className="flex flex-shrink-0 items-center">
               <a href="#intro">
-                <img className="h-8 w-auto" src="../../public/Favicon.svg" alt="Logo" />
+                <img className="h-8 w-auto" src="/ux-dev-portfolio/Favicon.svg" alt="Logo" />
               </a>
             </div>
             <div className="hidden sm:ml-6 sm:block">

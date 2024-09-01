@@ -5,7 +5,7 @@ function Banner() {
     <div className="justify-items-stretch flex overflow-hidden w-full h-40 sm:h-56" id="banner">
       <div
         className="bg-cover flex-1 flex justify-center items-center font-main font-bold text-lg sm:text-5xl text-pink"
-        style={{ backgroundImage: 'url(../public/BANNER.png)',
+        style={{ backgroundImage: 'url(../ux-dev-portfolio/BANNER.png)',
         backgroundPosition: 'center'
         }}
 
@@ -14,7 +14,7 @@ function Banner() {
       </div>
       <div
         className="bg-cover flex-1 flex justify-center items-center font-main font-bold text-lg sm:text-5xl text-pink"
-        style={{ backgroundImage: 'url(../public/BANNER.png)',
+        style={{ backgroundImage: 'url(../ux-dev-portfolio/BANNER.png)',
         backgroundPosition: 'center'
         }}
       >
@@ -22,7 +22,7 @@ function Banner() {
       </div>
       <div
         className="bg-cover flex-1 flex justify-center items-center font-main font-bold text-lg sm:text-5xl text-pink"
-        style={{ backgroundImage: 'url(../public/BANNER.png)',
+        style={{ backgroundImage: 'url(../ux-dev-portfolio/BANNER.png)',
         backgroundPosition: 'center'
         }}
       >
