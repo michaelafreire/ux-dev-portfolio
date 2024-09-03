@@ -1,5 +1,6 @@
 import React from 'react'
 import './App.css'
+import { useTranslation } from 'react-i18next';
 import Navbar from './components/Navbar.jsx'
 import Introduction from './components/Introduction.jsx'
 import AboutMe from './components/AboutMe.jsx'
@@ -8,6 +9,11 @@ import Contact from './components/Contact.jsx'
 import Banner from './components/Banner.jsx'
 
 function App() {
+    const { t, i18n } = useTranslation();
+    const changeLanguage = lng => {
+      i18n.changeLanguage(lng);
+    };
+
   return (
     <>
       <Navbar />

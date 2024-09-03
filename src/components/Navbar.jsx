@@ -1,13 +1,14 @@
 import React, { useRef } from 'react';
 import { useIsVisible } from '../hooks/useIsVisible';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function DropDownMenu() {
   return (
     <div className="space-y-1 px-2 pb-3 pt-2">
-      <a href="#about-me" className="block my-0 ps-1 pt-1 text-gray text-sm font-main hover:text-pink-light">About me</a>
-      <a href="#projects" className="block my-0 ps-1 text-gray text-sm font-main hover:text-pink-light">Projects</a>
-      <a href="#contact" className="block my-0 ps-1 text-gray text-sm font-main hover:text-pink-light">Contact</a>
+      <a href="#about-me" className="block my-0 ps-1 pt-1 text-gray text-sm font-main hover:text-pink-light">{t('navbar-i')}</a>
+      <a href="#projects" className="block my-0 ps-1 text-gray text-sm font-main hover:text-pink-light">{t('navbar-ii')}</a>
+      <a href="#contact" className="block my-0 ps-1 text-gray text-sm font-main hover:text-pink-light">{t('navbar-iii')}</a>
     </div>
   )
 }
@@ -19,6 +20,10 @@ function Navbar() {
   const isVisible2 = useIsVisible(ref2);
   const ref3 = useRef();
   const isVisible3 = useIsVisible(ref3);
+  const { t, i18n } = useTranslation();
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng);
+  };
 
   const changeColor = () => {
     if (window.scrollY >= 350) {
@@ -73,9 +78,9 @@ function Navbar() {
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <a href="#about-me" ref={ref1} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>About me</a>
-                <a href="#projects" ref={ref2} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>Projects</a>
-                <a href="#contact" ref={ref3} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>Contact</a>
+                <a href="#about-me" ref={ref1} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-i')}</a>
+                <a href="#projects" ref={ref2} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-ii')}</a>
+                <a href="#contact" ref={ref3} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-iii')}</a>
               </div>
             </div>
           </div>
