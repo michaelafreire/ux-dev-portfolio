@@ -4,6 +4,11 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function DropDownMenu() {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <div className="space-y-1 px-2 pb-3 pt-2">
       <a href="#about-me" className="block my-0 ps-1 pt-1 text-gray text-sm font-main hover:text-pink-light">{t('navbar-i')}</a>
