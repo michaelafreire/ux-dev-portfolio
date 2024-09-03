@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
+import { useTranslation } from 'react-i18next';
 
 const bestVetStack = (
   <div className="flex flex-wrap gap-2">
@@ -56,49 +57,54 @@ const bestPetsitterStack = (
 
 
 function Projects() {
+  const { t, i18n } = useTranslation();
+  const changeLanguage = lng => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <div id="projects" className="p-8 sm:pl-10">
       <div className="min-h-screen flex items-center justify-center">
           <ProjectCard
           videoSrc="/ux-dev-portfolio/videos/ESPACIO ITS.mp4"
-          title="Espacio ITS"
-          description="I led a team in the research and development of a prototype for an online learning platform aimed at upskilling teachers in Peru. The project gained recognition from Intercorp as a Transformative Initiative for the 2021 Innovation Fair, leading to participation in a learning program with IDEO and other industry leaders."
+          title= "Espacio ITS"
+          description={t('espacio-its-description')}
           stack={espacioItsStack}
-          role="Role: Product Owner and Design Researcher"/>
+          role={t('espacio-its-role')}/>
       </div>
       <div className="min-h-screen flex items-center justify-center">
           <ProjectCard
           imageSrc="/ux-dev-portfolio/SEND_EY.png"
           imageTitle="SendEY"
-          title="SEND EY Parental Pathway"
-          description="My team and I collaborated with early years providers and parents of children with special educational needs and disabilities, as well as policymakers, to design a digital solution to help parents navigate the SEND EY system with more ease."
+          title={t('send-ey')}
+          description={t('send-ey-description')}
           stack={sendEyStack}
-          role="Role: Delivery Manager and Interdisciplinary Contribution"/>
+          role={t('send-ey-role')}/>
       </div>
       <div className="min-h-screen flex items-center justify-center">
           <ProjectCard
           videoSrc="/ux-dev-portfolio/videos/BESTVET.mp4"
           title="Best Vet"
-          description="As a final project in LeWagon's bootcamp, my team and I designed and built an online membership-based veterinary clinic, granting pet owners access to certified veterinary professionals at accessible prices."
+          description={t('best-vet-description')}
           stack={bestVetStack}
-          role="Role: Fullstack Developer"/>
+          role={t('best-vet-role')}/>
       </div>
       <div className="min-h-screen flex items-center justify-center">
           <ProjectCard
           imageSrc="/ux-dev-portfolio/VIVIDBRANDS.png"
           imageTitle="Vivid Brands"
           title="Vivid Brands"
-          description="Vivid Brands is on a mission to create, build and scale brands, through E-commerce, that have a positive impact on the consumer's life. I joined the project as a freelance consultant to assist in gaining deeper insights into their users and to design a brand strategy and website structure for their rebranding."
+          description={t('vivid-brands-description')}
           stack={vividBrandsStack}
-          role="Role: Design Researcher"/>
+          role={t('vivid-brands-role')}/>
       </div>
       <div className="min-h-screen flex items-center justify-center">
         <ProjectCard
           videoSrc="/ux-dev-portfolio/videos/BEST PETSITTER.mp4"
           title="Best Petsitter"
-          description="As a project in LeWagon's bootcamp, my team and I designed and built a platform to connect pet owners with trustworthy petsitters."
+          description={t('best-petsitter-description')}
           stack={bestPetsitterStack}
-          role="Role: Fullstack Developer"/>
+          role={t('best-petsitter-role')}/>
       </div>
     </div>
   )
