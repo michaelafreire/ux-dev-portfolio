@@ -37,8 +37,8 @@ function AboutMe() {
   };
 
   const aboutMeText = (
-    <p>{t('about-me-iii')}</p>
-  )
+    <p dangerouslySetInnerHTML={{ __html: t("about-me-iii") }}></p>
+  );
 
   function handleHover(title, description) {
     setIsHovering(true);
@@ -57,9 +57,9 @@ function AboutMe() {
           <div>
             <Card title={t('about-me-ii')} description={aboutMeText} text="text-black text-m sm:text-xl" />
             <div className="flex pr-7">
-              <Phase image="/ux-dev-portfolio/RESEARCH.png" title={t('about-me-iv')} onHover={() => handleHover(t('about-me-iv'), t('about-me-v'))} onLeave={handleMouseLeave}/>
-              <Phase image="/ux-dev-portfolio/DESIGN.png" title={t('about-me-vi')} onHover={() => handleHover(t('about-me-vi'), t('about-me-vii'))} onLeave={handleMouseLeave}/>
-              <Phase image="/ux-dev-portfolio/BUILD.png"title={t('about-me-viii')}  onHover={() => handleHover(t('about-me-viii'), t('about-me-ix'))} onLeave={handleMouseLeave}/>
+              <Phase image="/ux-dev-portfolio/RESEARCH.png" title="01." onHover={() => handleHover(t('about-me-iv'), t('about-me-v'))} onLeave={handleMouseLeave}/>
+              <Phase image="/ux-dev-portfolio/DESIGN.png" title="02." onHover={() => handleHover(t('about-me-vi'), t('about-me-vii'))} onLeave={handleMouseLeave}/>
+              <Phase image="/ux-dev-portfolio/BUILD.png"title="03."  onHover={() => handleHover(t('about-me-viii'), t('about-me-ix'))} onLeave={handleMouseLeave}/>
             </div>
             <div className={`transition-opacity duration-500 ease-in  ${isHovering ? 'opacity-100' : 'opacity-0'} bg-pink rounded-md mr-8 ms-2 mt-4 sm:max-w-xl p-2`}>
               <p className="px-3 py-1 font-bold text-m sm:text-xl font-main font-bold text-gray">{hoveredPhase.title}</p>
