@@ -17,8 +17,8 @@ function Introduction() {
     <div id="intro">
       <div className="pt-20 flex justify-end items-center mr-10">
         <FontAwesomeIcon className="mr-2 text-sm text-white" icon={faGlobe} />
-        <button className="btn text-sm text-white font-main hover:text-pink-light transition duration-500 ease-out" onClick={() => changeLanguage('en')}>English</button>
-        <button className="btn text-sm text-white font-main ml-2 hover:text-pink-light transition duration-500 ease-out" onClick={() => changeLanguage('sp')}>Español</button>
+        <button className="btn text-sm text-white font-main hover:text-pink-light-light transition duration-500 ease-out" onClick={() => changeLanguage('en')}>English</button>
+        <button className="btn text-sm text-white font-main ml-2 hover:text-pink-light-light transition duration-500 ease-out" onClick={() => changeLanguage('sp')}>Español</button>
       </div>
       <div className="p-8 sm:pl-10 min-h-screen flex items-center justify-start">
         <div ref={ref1} className={`transition-translate ease-in duration-500 ${isVisible1 ? "translate-x-0" : "-translate-x-10"}`}>
@@ -27,7 +27,14 @@ function Introduction() {
           <p className="font-main text-gray text-m font-bold sm:text-xl">{t('intro-ii')}</p>
           <p className="font-main text-gray text-m mt-5 max-w-lg w-full sm:text-xl sm:max-w-xl">{t('intro-iii')}</p>
           <div className="max-w-lg w-full mt-5 flex justify-start">
-            <Button text={t('intro-iv')} website="mailto:michaela.freiregriffith@gmail.com" />
+            <Button className="btn rounded-md px-3 py-2 text-sm font-main hover:bg-pink-light-light hover:text-white text-pink bg-white sm:text-xl transition duration-500 ease-out drop-shadow-sm"
+              text={t('intro-iv')}
+              website="mailto:michaela.freiregriffith@gmail.com"
+            />
+            <Button className="btn rounded-md px-3 py-2 text-sm font-main hover:bg-pink-light-light text-gray bg-pink-light sm:text-xl transition duration-500 ease-out drop-shadow-sm"
+              text={t('intro-v')}
+              website="mailto:michaela.freiregriffith@gmail.com"
+            />
           </div>
         </div>
       </div>

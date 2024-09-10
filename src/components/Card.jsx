@@ -17,7 +17,6 @@ Card.propTypes = {
     PropTypes.string,
     PropTypes.node
   ]).isRequired,
-  bg: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
 

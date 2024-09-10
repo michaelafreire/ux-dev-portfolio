@@ -1,13 +1,9 @@
 #root {
-  background-color: #ff0055;
+  background-color: #99a6f9;
 }
 
 #about-me,
 #contact,
 #projects {
-  background-color: #f0f0f0;
-}
-
-#banner {
-  background-color: #f0a4be;
+  background-color: #ffffff;
 }
