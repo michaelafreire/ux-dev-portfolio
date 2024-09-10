@@ -6,13 +6,14 @@ export default {
   ],
   theme: {
     colors: {
-      'pink': '#ff0055',
-      'pink-light': '#f0a4be',
-      'pink-light-light': '#ecc8d4',
-      'gray': '#f0f0f0',
-      'transparent-gray': 'rgba(240, 164, 190, 0.8)',
-      'black': '#373e4c',
-      'white': '#f0f0f0',
+      'blue': '#99a6f9',
+      'pink': '#fe885c',
+      'pink-light': '#fe885c',
+      'pink-light-light': '#c3cafc',
+      'gray': '#ffffff',
+      'transparent-gray': '#ece7e2',
+      'black': '#1f0e22',
+      'white': '#ffffff',
     },
     fontFamily: {
       main: ['Montserrat', 'sans-serif']},

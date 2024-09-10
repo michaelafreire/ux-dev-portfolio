@@ -53,7 +53,7 @@ function AboutMe() {
     <div className="p-8 sm:pl-10 min-h-screen flex items-center justify-center" id="about-me">
       <div ref={ref1} className={`transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
         <div className="sm:flex">
-          <Card title={t('about-me-i')} description={skillsText} text="text-pink text-m sm:text-xl" />
+          <Card title={t('about-me-i')} description={skillsText} text="text-blue text-m sm:text-xl" />
           <div>
             <Card title={t('about-me-ii')} description={aboutMeText} text="text-black text-m sm:text-xl" />
             <div className="flex pr-7">

@@ -27,16 +27,16 @@ function Contact() {
             </h3>
             <div className="flex mt-2 sm:mt-4">
               <a href="mailto:michaela.freiregriffith@gmail.com" className="mr-4">
-                <FontAwesomeIcon icon={faEnvelope} className="font-main text-black text-m sm:text-xl hover:text-pink-light transition duration-500 ease-out" />
+                <FontAwesomeIcon icon={faEnvelope} className="font-main text-black text-m sm:text-xl hover:text-pink-light-light transition duration-500 ease-out" />
               </a>
               <a href="https://www.linkedin.com/in/michaela-freire-griffith-23743a124" target="_blank" rel="noopener noreferrer" className="mr-4">
-                <FontAwesomeIcon icon={faLinkedinIn} className="font-main text-black text-m sm:text-xl hover:text-pink-light transition duration-500 ease-out" />
+                <FontAwesomeIcon icon={faLinkedinIn} className="font-main text-black text-m sm:text-xl hover:text-pink-light-light  transition duration-500 ease-out" />
               </a>
               <a href="https://github.com/michaelafreire" target="_blank" rel="noopener noreferrer" className="mr-4">
-                <FontAwesomeIcon icon={faGithub} className="font-main text-black text-m sm:text-xl hover:text-pink-light transition duration-500 ease-out" />
+                <FontAwesomeIcon icon={faGithub} className="font-main text-black text-m sm:text-xl hover:text-pink-light-light  transition duration-500 ease-out" />
               </a>
               <a href="https://your-website.com" target="_blank" rel="noopener noreferrer" className="mr-4">
-                <FontAwesomeIcon icon={faAddressCard} className="font-main text-black text-m sm:text-xl hover:text-pink-light transition duration-500 ease-out" />
+                <FontAwesomeIcon icon={faAddressCard} className="font-main text-black text-m sm:text-xl hover:text-pink-light-light  transition duration-500 ease-out" />
               </a>
             </div>
           </div>

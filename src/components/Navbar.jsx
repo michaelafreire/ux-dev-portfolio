@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { useIsVisible } from '../hooks/useIsVisible';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 
 function DropDownMenu() {
   const { t, i18n } = useTranslation();
@@ -11,9 +12,9 @@ function DropDownMenu() {
 
   return (
     <div className="space-y-1 px-2 pb-3 pt-2">
-      <a href="#about-me" className="block my-0 ps-1 pt-1 text-gray text-sm font-main hover:text-pink-light">{t('navbar-i')}</a>
-      <a href="#projects" className="block my-0 ps-1 text-gray text-sm font-main hover:text-pink-light">{t('navbar-ii')}</a>
-      <a href="#contact" className="block my-0 ps-1 text-gray text-sm font-main hover:text-pink-light">{t('navbar-iii')}</a>
+      <Link to="/ux-dev-portfolio/about-me" className="block my-0 ps-1 pt-1 text-gray text-sm font-main hover:text-pink-light-light">{t('navbar-i')}</Link>
+      <Link to="/ux-dev-portfolio/projects" className="block my-0 ps-1 text-gray text-sm font-main hover:text-pink-light-light">{t('navbar-ii')}</Link>
+      <Link to="/ux-dev-portfolio/contact" className="block my-0 ps-1 text-gray text-sm font-main hover:text-pink-light-light">{t('navbar-iii')}</Link>
     </div>
   )
 }
@@ -50,7 +51,7 @@ function Navbar() {
   };
 
   return (
-    <nav className={`${colour ? "bg-pink-light" : ""} opacity-80 fixed w-full top-0 z-50 transition ease-in duration-700`}>
+    <nav className={`${colour ? "bg-blue" : ""} opacity-80 fixed w-full top-0 z-50 transition ease-in duration-700`}>
       <div className="mx-auto px-2 sm:px-6">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -77,15 +78,15 @@ function Navbar() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
             <div className="flex flex-shrink-0 items-center">
-              <a href="#intro">
+              <Link to="/ux-dev-portfolio/">
                 <img className="h-8 w-auto" src="/ux-dev-portfolio/Favicon.svg" alt="Logo" />
-              </a>
+              </Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <a href="#about-me" ref={ref1} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-i')}</a>
-                <a href="#projects" ref={ref2} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-ii')}</a>
-                <a href="#contact" ref={ref3} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-iii')}</a>
+                <Link to="/ux-dev-portfolio/about-me" ref={ref1} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-i')}</Link>
+                <Link to="/ux-dev-portfolio/projects" ref={ref2} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-ii')}</Link>
+                <Link to="/ux-dev-portfolio/contact" ref={ref3} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-iii')}</Link>
               </div>
             </div>
           </div>

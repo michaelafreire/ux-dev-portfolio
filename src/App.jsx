@@ -1,12 +1,13 @@
 import React from 'react'
 import './App.css'
 import { useTranslation } from 'react-i18next';
-import Navbar from './components/Navbar.jsx'
-import Introduction from './components/Introduction.jsx'
-import AboutMe from './components/AboutMe.jsx'
-import Projects from './components/Projects.jsx'
-import Contact from './components/Contact.jsx'
-import Banner from './components/Banner.jsx'
+import Navbar from './components/Navbar.jsx';
+import Introduction from './components/Introduction.jsx';
+import AboutMe from './components/AboutMe.jsx';
+import Projects from './components/Projects.jsx';
+import Contact from './components/Contact.jsx';
+import Banner from './components/Banner.jsx';
+import { Routes, Route } from "react-router-dom"
 
 function App() {
     const { t, i18n } = useTranslation();
@@ -15,16 +16,15 @@ function App() {
     };
 
   return (
-    <>
+    <div className="App">
       <Navbar />
-      <div>
-        <Introduction />
-        <Banner />
-        <AboutMe />
-        <Projects />
-        <Contact />
-      </div>
-    </>
+      <Routes>
+        <Route path="/ux-dev-portfolio/" element={ <Introduction /> } />
+        <Route path="/ux-dev-portfolio/about-me" element={ <AboutMe /> } />
+        <Route path="/ux-dev-portfolio/projects" element={ <Projects /> } />
+        <Route path="/ux-dev-portfolio/contact" element={ <Contact /> } />
+      </Routes>
+    </div>
   )
 }
 
