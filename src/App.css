@@ -4,6 +4,7 @@
 
 #about-me,
 #contact,
-#projects {
+#projects,
+.projects-container {
   background-color: #ffffff;
 }

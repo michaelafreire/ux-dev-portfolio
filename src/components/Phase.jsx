@@ -10,7 +10,7 @@ function Phase(props) {
         style={{backgroundImage: `url(${props.image})`,
         backgroundPosition: 'center'}}
         >
-        <p className="text-xl font-main font-bold text-pink pr-4 pt-2">{props.title}</p>
+        <p className="text-xl font-main font-bold text-orange pr-4 pt-2">{props.title}</p>
       </div>
     </div>
   )

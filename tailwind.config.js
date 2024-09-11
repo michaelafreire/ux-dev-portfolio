@@ -7,13 +7,13 @@ export default {
   theme: {
     colors: {
       'blue': '#99a6f9',
-      'pink': '#fe885c',
-      'pink-light': '#fe885c',
-      'pink-light-light': '#c3cafc',
+      'blue-light': '#c3cafc',
+      'orange': '#fe885c',
+      'orange-light': '#ffbca4',
       'gray': '#ffffff',
       'transparent-gray': '#ece7e2',
       'black': '#1f0e22',
-      'white': '#ffffff',
+      'white': '#ffffff'
     },
     fontFamily: {
       main: ['Montserrat', 'sans-serif']},

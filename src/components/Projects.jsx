@@ -4,54 +4,54 @@ import { useTranslation } from 'react-i18next';
 
 const bestVetStack = (
   <div className="flex flex-wrap gap-2">
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Rails</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Javascript</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">HTML</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">CSS</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Heroku</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Figma</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">SQL</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Bootstrap</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Rails</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Javascript</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">HTML</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">CSS</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Heroku</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Figma</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">SQL</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Bootstrap</div>
   </div>
 )
 
 const espacioItsStack = (
   <div className = "flex flex-wrap gap-2">
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Figma</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">User Research</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Wireframing</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Prototyping</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Figma</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">User Research</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Wireframing</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Prototyping</div>
   </div>
 )
 
 const sendEyStack = (
   <div className = "flex flex-wrap gap-2">
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Figma</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">User Research</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Co-Design</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Wireframing</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Prototyping</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Figma</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">User Research</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Co-Design</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Wireframing</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Prototyping</div>
   </div>
 )
 
 const vividBrandsStack = (
   <div className = "flex flex-wrap gap-2">
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">User Research</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Competitor Analysis</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Co-Creation</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Wireframing</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">User Research</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Competitor Analysis</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Co-Creation</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Wireframing</div>
   </div>
 )
 
 const bestPetsitterStack = (
   <div className = "flex flex-wrap gap-2">
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Rails</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Javascript</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">HTML</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">CSS</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Heroku</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">SQL</div>
-    <div className="inline-block rounded-md px-2 py-1 font-main bg-pink-light-light text-white">Bootstrap</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Rails</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Javascript</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">HTML</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">CSS</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Heroku</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">SQL</div>
+    <div className="inline-block rounded-md px-2 py-1 font-main bg-blue-light text-white">Bootstrap</div>
   </div>
 )
 

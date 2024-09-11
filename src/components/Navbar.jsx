@@ -12,9 +12,9 @@ function DropDownMenu() {
 
   return (
     <div className="space-y-1 px-2 pb-3 pt-2">
-      <Link to="/ux-dev-portfolio/about-me" className="block my-0 ps-1 pt-1 text-gray text-sm font-main hover:text-pink-light-light">{t('navbar-i')}</Link>
-      <Link to="/ux-dev-portfolio/projects" className="block my-0 ps-1 text-gray text-sm font-main hover:text-pink-light-light">{t('navbar-ii')}</Link>
-      <Link to="/ux-dev-portfolio/contact" className="block my-0 ps-1 text-gray text-sm font-main hover:text-pink-light-light">{t('navbar-iii')}</Link>
+      <Link to="/ux-dev-portfolio/about-me" className="block my-0 ps-1 pt-1 text-gray text-sm font-main hover:text-blue-light">{t('navbar-i')}</Link>
+      <Link to="/ux-dev-portfolio/projects" className="block my-0 ps-1 text-gray text-sm font-main hover:text-blue-light">{t('navbar-ii')}</Link>
+      <Link to="/ux-dev-portfolio/contact" className="block my-0 ps-1 text-gray text-sm font-main hover:text-blue-light">{t('navbar-iii')}</Link>
     </div>
   )
 }
@@ -84,9 +84,9 @@ function Navbar() {
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <Link to="/ux-dev-portfolio/about-me" ref={ref1} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-i')}</Link>
-                <Link to="/ux-dev-portfolio/projects" ref={ref2} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-ii')}</Link>
-                <Link to="/ux-dev-portfolio/contact" ref={ref3} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-pink-light-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-iii')}</Link>
+                <Link to="/ux-dev-portfolio/about-me" ref={ref1} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-blue-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-i')}</Link>
+                <Link to="/ux-dev-portfolio/projects" ref={ref2} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-blue-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-ii')}</Link>
+                <Link to="/ux-dev-portfolio/contact" ref={ref3} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-blue-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-iii')}</Link>
               </div>
             </div>
           </div>

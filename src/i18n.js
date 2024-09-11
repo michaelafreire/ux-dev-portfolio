@@ -57,7 +57,7 @@ const resources = {
       "about-me-ix": "Me he formado en el desarrollo de código mantenible y estoy comprometida a mantenerme al día con las tendencias de la industria. Soy competente en la gestión de proyectos Agile, incluido Scrum. Colaboro eficazmente con equipos multidisciplinarios y estoy dedicada a mi oficio, con el objetivo de generar un impacto significativo.",
       "espacio-its-role": "Rol: Product Owner e Investigadora de Diseño",
       "espacio-its-description": "Lideré un equipo en la investigación y desarrollo de un prototipo para una plataforma de aprendizaje en línea destinada a mejorar las habilidades de los profesores en Perú. El proyecto fue reconocido por Intercorp como una Iniciativa Transformadora en la Feria de Innovación 2021, lo que nos llevó a participar en un programa de aprendizaje con IDEO y otros líderes de la industria.",
-      "send-ey": "Ruta Parental para Necesidades Educativas Especiales y Discapacidades en la Primera Infancia",
+      "send-ey": "Ruta Parental para Educación Especial",
       "send-ey-role": "Rol: Gerente de Entrega y Contribución Interdisciplinaria",
       "send-ey-description": "Mi equipo y yo colaboramos con proveedores de educación temprana y padres de niños con necesidades educativas especiales y discapacidades, así como como formuladores de políticas públicas, para diseñar una solución digital que ayude a los padres a navegar los servicios de educación temprana con mayor facilidad.",
       "best-vet-role": "Rol: Desarrolladora Full Stack",

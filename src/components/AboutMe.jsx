@@ -61,13 +61,10 @@ function AboutMe() {
               <Phase image="/ux-dev-portfolio/DESIGN.png" title="02." onHover={() => handleHover(t('about-me-vi'), t('about-me-vii'))} onLeave={handleMouseLeave}/>
               <Phase image="/ux-dev-portfolio/BUILD.png"title="03."  onHover={() => handleHover(t('about-me-viii'), t('about-me-ix'))} onLeave={handleMouseLeave}/>
             </div>
-            <div className={`transition-opacity duration-500 ease-in  ${isHovering ? 'opacity-100' : 'opacity-0'} bg-pink rounded-md mr-8 ms-2 mt-4 sm:max-w-xl p-2`}>
+            <div className={`transition-opacity duration-500 ease-in  ${isHovering ? 'opacity-100' : 'opacity-0'} bg-orange rounded-md mr-8 ms-2 mt-4 sm:max-w-xl p-2`}>
               <p className="px-3 py-1 font-bold text-m sm:text-xl font-main font-bold text-gray">{hoveredPhase.title}</p>
               <p className="px-3 pb-2 text-m font-main text-gray">{hoveredPhase.description}</p>
             </div>
-            {/* <div className="flex sm:justify-end">
-              <Button text="Download CV" link="#projects"/>
-            </div> */}
           </div>
         </div>
       </div>
