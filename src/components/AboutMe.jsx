@@ -5,6 +5,7 @@ import Phase from './Phase.jsx';
 import { useIsVisible } from '../hooks/useIsVisible';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import Contact from './Contact.jsx';
 
 
 const skillsText = (
@@ -50,24 +51,27 @@ function AboutMe() {
   }
 
   return (
-    <div className="p-8 sm:pl-10 min-h-screen flex items-center justify-center" id="about-me">
-      <div ref={ref1} className={`transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
-        <div className="sm:flex">
-          <Card title={t('about-me-i')} description={skillsText} text="text-blue text-m sm:text-xl" />
-          <div>
-            <Card title={t('about-me-ii')} description={aboutMeText} text="text-black text-m sm:text-xl" />
-            <div className="flex pr-7">
-              <Phase image="/ux-dev-portfolio/RESEARCH.png" title="01." onHover={() => handleHover(t('about-me-iv'), t('about-me-v'))} onLeave={handleMouseLeave}/>
-              <Phase image="/ux-dev-portfolio/DESIGN.png" title="02." onHover={() => handleHover(t('about-me-vi'), t('about-me-vii'))} onLeave={handleMouseLeave}/>
-              <Phase image="/ux-dev-portfolio/BUILD.png"title="03."  onHover={() => handleHover(t('about-me-viii'), t('about-me-ix'))} onLeave={handleMouseLeave}/>
-            </div>
-            <div className={`transition-opacity duration-500 ease-in  ${isHovering ? 'opacity-100' : 'opacity-0'} bg-orange rounded-md mr-8 ms-2 mt-4 sm:max-w-xl p-2`}>
-              <p className="px-3 py-1 font-bold text-m sm:text-xl font-main font-bold text-gray">{hoveredPhase.title}</p>
-              <p className="px-3 pb-2 text-m font-main text-gray">{hoveredPhase.description}</p>
+    <div>
+      <div className="p-8 sm:pl-10 min-h-screen flex items-center justify-center" id="about-me">
+        <div ref={ref1} className={`transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
+          <div className="sm:flex">
+            <Card title={t('about-me-i')} description={skillsText} text="text-blue text-m sm:text-xl" />
+            <div>
+              <Card title={t('about-me-ii')} description={aboutMeText} text="text-black text-m sm:text-xl" />
+              <div className="flex pr-7">
+                <Phase image="/ux-dev-portfolio/RESEARCH.png" title="01." onHover={() => handleHover(t('about-me-iv'), t('about-me-v'))} onLeave={handleMouseLeave}/>
+                <Phase image="/ux-dev-portfolio/DESIGN.png" title="02." onHover={() => handleHover(t('about-me-vi'), t('about-me-vii'))} onLeave={handleMouseLeave}/>
+                <Phase image="/ux-dev-portfolio/BUILD.png"title="03."  onHover={() => handleHover(t('about-me-viii'), t('about-me-ix'))} onLeave={handleMouseLeave}/>
+              </div>
+              <div className={`transition-opacity duration-500 ease-in  ${isHovering ? 'opacity-100' : 'opacity-0'} bg-orange rounded-md mr-8 ms-2 mt-4 sm:max-w-xl p-2`}>
+                <p className="px-3 py-1 font-bold text-m sm:text-xl font-main font-bold text-gray">{hoveredPhase.title}</p>
+                <p className="px-3 pb-2 text-m font-main text-gray">{hoveredPhase.description}</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <Contact />
     </div>
   )
 }
