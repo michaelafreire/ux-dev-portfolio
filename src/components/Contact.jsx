@@ -8,42 +8,36 @@ import { useIsVisible } from '../hooks/useIsVisible';
 import { useTranslation } from 'react-i18next';
 
 function Contact() {
-  const ref1 = useRef();
-  const isVisible1 = useIsVisible(ref1);
-  const ref2 = useRef();
-  const isVisible2 = useIsVisible(ref2);
+  // const ref1 = useRef();
+  // const isVisible1 = useIsVisible(ref1);
   const { t, i18n } = useTranslation();
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
   };
 
   return (
-    <div id="contact" className="p-10 sm:pl-[100px] sm:pr-[100px]">
+    <div id="contact" className="sm:pl-[100px] sm:pr-[100px] h-screen">
+      <h1 className="pt-10 sm:pt-32 font-libre font-bold text-pink text-3xl sm:text-8xl">Contacto.</h1>
+      <p className="my-10 font-main sm:text-xl text-m text-pink">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem</p>
       <div className="flex items-end justify-start">
-        <div>
-          <div ref={ref1} className={`relative transition-translate ease-in duration-500 ${isVisible1 ? "translate-x-0" : "-translate-x-6"}`}>
-            <h3 className="pt-40 sm:pt-80 relative z-0 font-main font-bold text-blue text-3xl mt-2 sm:text-5xl py-6">
-              {t('collaborate')}
-            </h3>
+        {/* <div>
+          <div ref={ref1} className={`my-10 sm:my-40 relative transition-translate ease-in duration-500 ${isVisible1 ? "translate-x-0" : "-translate-x-6"}`}>
             <div className="flex mt-2 sm:mt-4">
               <a href="mailto:michaela.freiregriffith@gmail.com" className="mr-4">
-                <FontAwesomeIcon icon={faEnvelope} className="font-main text-blue text-m sm:text-xl hover:text-blue-light transition duration-500 ease-out" />
+                <FontAwesomeIcon icon={faEnvelope} className="font-main text-pink text-m sm:text-4xl hover:text-blue-light transition duration-500 ease-out" />
               </a>
               <a href="https://www.linkedin.com/in/michaela-freire-griffith-23743a124" target="_blank" rel="noopener noreferrer" className="mr-4">
-                <FontAwesomeIcon icon={faLinkedinIn} className="font-main text-blue text-m sm:text-xl hover:text-blue-light  transition duration-500 ease-out" />
+                <FontAwesomeIcon icon={faLinkedinIn} className="font-main text-pink text-m sm:text-4xl hover:text-blue-light  transition duration-500 ease-out" />
               </a>
               <a href="https://github.com/michaelafreire" target="_blank" rel="noopener noreferrer" className="mr-4">
-                <FontAwesomeIcon icon={faGithub} className="font-main text-blue text-m sm:text-xl hover:text-blue-light  transition duration-500 ease-out" />
+                <FontAwesomeIcon icon={faGithub} className="font-main text-pink text-m sm:text-4xl hover:text-blue-light  transition duration-500 ease-out" />
               </a>
               <a href="https://your-website.com" target="_blank" rel="noopener noreferrer" className="mr-4">
-                <FontAwesomeIcon icon={faAddressCard} className="font-main text-blue text-m sm:text-xl hover:text-blue-light  transition duration-500 ease-out" />
+                <FontAwesomeIcon icon={faAddressCard} className="font-main text-pink text-m sm:text-4xl hover:text-blue-light  transition duration-500 ease-out" />
               </a>
             </div>
           </div>
-        </div>
-      </div>
-      <div ref={ref2} className={`flex justify-center transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
-        <p className="font-main text-sm sm:text-base mt-8 text-orange">{t('built')}</p>
+        </div> */}
       </div>
     </div>
   )

@@ -12,9 +12,9 @@ function DropDownMenu() {
 
   return (
     <div className="space-y-1 px-2 pb-3 pt-2">
-      <Link to="/ux-dev-portfolio/about-me" className="block my-0 ps-1 pt-1 text-gray text-sm font-main hover:text-blue-light">{t('navbar-i')}</Link>
-      <Link to="/ux-dev-portfolio/projects" className="block my-0 ps-1 text-gray text-sm font-main hover:text-blue-light">{t('navbar-ii')}</Link>
-      <Link to="/ux-dev-portfolio/contact" className="block my-0 ps-1 text-gray text-sm font-main hover:text-blue-light">{t('navbar-iii')}</Link>
+      <Link to="/ux-dev-portfolio/about-me" className="block my-0 ps-1 pt-1 text-red text-m font-main hover:text-white">{t('navbar-i')}</Link>
+      <Link to="/ux-dev-portfolio/projects" className="block my-0 ps-1 text-red text-m font-main hover:text-white">{t('navbar-ii')}</Link>
+      <Link to="/ux-dev-portfolio/contact" className="block my-0 ps-1 text-red text-m font-main hover:text-white">{t('navbar-iii')}</Link>
     </div>
   )
 }
@@ -41,8 +41,6 @@ function Navbar() {
 
   window.addEventListener('scroll', changeColor);
 
-  //change colour when scrolling
-  const [colour, setColour] = useState(false)
   //dropdown menu visibility
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -51,7 +49,7 @@ function Navbar() {
   };
 
   return (
-    <nav className={`${colour ? "bg-blue" : ""} opacity-80 fixed w-full top-0 z-50 transition ease-in duration-700`}>
+    <nav className= "bg-pink opacity-80 fixed w-full top-0 z-50">
       <div className="mx-auto px-2 sm:px-6">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -84,9 +82,9 @@ function Navbar() {
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <Link to="/ux-dev-portfolio/about-me" ref={ref1} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-blue-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-i')}</Link>
-                <Link to="/ux-dev-portfolio/projects" ref={ref2} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-blue-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-ii')}</Link>
-                <Link to="/ux-dev-portfolio/contact" ref={ref3} className={`rounded-md px-3 py-2 text-gray text-m font-main hover:text-blue-light transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-iii')}</Link>
+                <Link to="/ux-dev-portfolio/about-me" ref={ref1} className={`rounded-md px-3 py-2 text-red text-m font-main hover:text-white transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-i')}</Link>
+                <Link to="/ux-dev-portfolio/projects" ref={ref2} className={`rounded-md px-3 py-2 text-red text-m font-main hover:text-white transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-ii')}</Link>
+                <Link to="/ux-dev-portfolio/contact" ref={ref3} className={`rounded-md px-3 py-2 text-red text-m font-main hover:text-white transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-iii')}</Link>
               </div>
             </div>
           </div>

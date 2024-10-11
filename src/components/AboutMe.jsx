@@ -5,7 +5,9 @@ import Phase from './Phase.jsx';
 import { useIsVisible } from '../hooks/useIsVisible';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import Contact from './Contact.jsx';
+import Footer from './Footer.jsx';
+import ProjectContainer from './ProjectContainer.jsx';
+import Banner from './Banner.jsx';
 
 
 const skillsText = (
@@ -52,10 +54,14 @@ function AboutMe() {
 
   return (
     <div>
-      <div className="p-8 sm:pl-10 min-h-screen flex items-center justify-center" id="about-me">
+      <div className="sm:px-10 sm:px-[100px] mt-10 sm:mt-32">
+        <h1 className="font-libre font-bold text-red text-3xl sm:text-8xl">Sobre mi.</h1>
+        <p className="my-10 font-main sm:text-xl text-m">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+      </div>
+      <div className="px-8 sm:pl-10 flex items-center justify-center" id="about-me">
         <div ref={ref1} className={`transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
           <div className="sm:flex">
-            <Card title={t('about-me-i')} description={skillsText} text="text-blue text-m sm:text-xl" />
+            <Card title={t('about-me-i')} description={skillsText} text="text-red text-m sm:text-xl" />
             <div>
               <Card title={t('about-me-ii')} description={aboutMeText} text="text-black text-m sm:text-xl" />
               <div className="flex pr-7">
@@ -71,7 +77,12 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <Contact />
+      <div className="sm:px-10 sm:px-[100px] mt-10">
+        <p className="my-10 font-main sm:text-xl text-m">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+      </div>
+      <div className="mt-60">
+        <Footer />
+      </div>
     </div>
   )
 }

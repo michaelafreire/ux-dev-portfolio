@@ -7,14 +7,14 @@ function ProjectIntro(props) {
 
   return (
     <div ref={ref1}
-      className= {`overflow-hidden flex grid grid-cols-2 gap-4 relative transition-translate ease-in duration-500 ${isVisible1 ? "translate-x-0" : "-translate-x-6"} rounded-md bg-white h-80 shadow-md sm:col-span-3 mt-10 relative`}
+      className= {`overflow-hidden flex grid grid-cols-2 gap-4 relative transition-translate ease-in duration-500 ${isVisible1 ? "translate-x-0" : "-translate-x-6"} rounded-md bg-white h-80 shadow-md sm:col-span-3 relative m-3`}
     >
       <div className="col-span-1">
-        <p className="font-main text-blue text-m font-bold sm:text-xl font-bold pt-6 pl-4 bt-3">{props.name}</p>
-        <p className="font-main text-black text-m sm:text-xl pl-4 pt-4">{props.description}</p>
+        <p className="font-main font-bold text-black text-m sm:text-xl pt-8 pl-8 bt-3">{props.name}</p>
+        <p className="font-main text-black text-m sm:text-xl pl-8 pt-3">{props.description}</p>
       </div>
       <div className="relative w-full h-full col-span-1">
-        <div className="absolute bottom-4 right-4 bg-cover w-80 h-80"
+        <div className="absolute bottom-4 right-4 bg-cover w-52 h-52 sm:w-64 sm:h-64 md:h-72 md:w-72 lg:h-80 lg:w-80"
         style={{
           backgroundImage: `url(${props.img})`,
           backgroundPosition: 'left-bottom',

@@ -1,10 +1,11 @@
 #root {
-  background-color: #99a6f9;
+  background-color: #ffffff;
 }
 
-#about-me,
-#contact,
-#projects,
-.projects-container {
-  background-color: #ffffff;
+#contact {
+  background-color: #6a0e0c;
+}
+
+#starter{
+  background-color: #e6ddde;
 }
