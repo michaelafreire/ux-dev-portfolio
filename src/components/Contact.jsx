@@ -10,16 +10,19 @@ import { useTranslation } from 'react-i18next';
 function Contact() {
   // const ref1 = useRef();
   // const isVisible1 = useIsVisible(ref1);
+  const ref2 = useRef();
+  const isVisible2 = useIsVisible(ref2);
   const { t, i18n } = useTranslation();
   const changeLanguage = lng => {
     i18n.changeLanguage(lng);
   };
 
   return (
-    <div id="contact" className="sm:pl-[100px] sm:pr-[100px] h-screen">
-      <h1 className="pt-10 sm:pt-32 font-libre font-bold text-pink text-3xl sm:text-8xl">Contacto.</h1>
-      <p className="my-10 font-main sm:text-xl text-m text-pink">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem</p>
-      <div className="flex items-end justify-start">
+    <div id="contact" className="p-8 sm:pl-10 sm:pl-[100px] sm:pr-[100px] h-screen flex flex-col justify-between">
+      <div>
+        <h1 className="mt-14 sm:mt-28 font-libre font-bold text-pink text-3xl sm:text-8xl">Contacto.</h1>
+        <p className="my-10 font-main sm:text-xl text-m text-pink">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem</p>
+      </div>
         {/* <div>
           <div ref={ref1} className={`my-10 sm:my-40 relative transition-translate ease-in duration-500 ${isVisible1 ? "translate-x-0" : "-translate-x-6"}`}>
             <div className="flex mt-2 sm:mt-4">
@@ -38,7 +41,9 @@ function Contact() {
             </div>
           </div>
         </div> */}
-      </div>
+        <div ref={ref2} className={`flex justify-center items-end transition-opacity ease-in duration-700 ${isVisible2 ? "opacity-100" : "opacity-0"}`}>
+          <p className="font-main text-sm sm:text-base text-pink">{t('built')}</p>
+        </div>
     </div>
   )
 }

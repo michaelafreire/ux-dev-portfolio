@@ -54,31 +54,33 @@ function AboutMe() {
 
   return (
     <div>
-      <div className="sm:px-10 sm:px-[100px] mt-10 sm:mt-32">
-        <h1 className="font-libre font-bold text-red text-3xl sm:text-8xl">Sobre mi.</h1>
-        <p className="my-10 font-main sm:text-xl text-m">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-      </div>
-      <div className="px-8 sm:pl-10 flex items-center justify-center" id="about-me">
-        <div ref={ref1} className={`transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
-          <div className="sm:flex">
-            <Card title={t('about-me-i')} description={skillsText} text="text-red text-m sm:text-xl" />
-            <div>
-              <Card title={t('about-me-ii')} description={aboutMeText} text="text-black text-m sm:text-xl" />
-              <div className="flex pr-7">
-                <Phase image="/ux-dev-portfolio/RESEARCH.png" title="01." onHover={() => handleHover(t('about-me-iv'), t('about-me-v'))} onLeave={handleMouseLeave}/>
-                <Phase image="/ux-dev-portfolio/DESIGN.png" title="02." onHover={() => handleHover(t('about-me-vi'), t('about-me-vii'))} onLeave={handleMouseLeave}/>
-                <Phase image="/ux-dev-portfolio/BUILD.png"title="03."  onHover={() => handleHover(t('about-me-viii'), t('about-me-ix'))} onLeave={handleMouseLeave}/>
-              </div>
-              <div className={`transition-opacity duration-500 ease-in  ${isHovering ? 'opacity-100' : 'opacity-0'} bg-red rounded-md mr-8 ms-2 mt-4 sm:max-w-xl p-2`}>
-                <p className="px-3 py-1 font-bold text-m sm:text-xl font-main font-bold text-pink">{hoveredPhase.title}</p>
-                <p className="px-3 pb-2 text-m font-main text-pink">{hoveredPhase.description}</p>
+      <div className="p-8 sm:pl-10 sm:pl-[100px] sm:pr-[100px] mt-14 sm:mt-28">
+        <div>
+          <h1 className="font-libre font-bold text-red text-3xl sm:text-8xl">Sobre mi.</h1>
+          <p className="my-10 font-main sm:text-xl text-m">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+        </div>
+        <div className="flex justify-center" id="about-me">
+          <div ref={ref1} className={`transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
+            <div className="sm:flex">
+              <Card title={t('about-me-i')} description={skillsText} text="text-red text-m sm:text-xl" />
+              <div>
+                <Card title={t('about-me-ii')} description={aboutMeText} text="text-black text-m sm:text-xl" />
+                <div className="flex pr-7">
+                  <Phase image="/ux-dev-portfolio/RESEARCH.png" title="01." onHover={() => handleHover(t('about-me-iv'), t('about-me-v'))} onLeave={handleMouseLeave} />
+                  <Phase image="/ux-dev-portfolio/DESIGN.png" title="02." onHover={() => handleHover(t('about-me-vi'), t('about-me-vii'))} onLeave={handleMouseLeave} />
+                  <Phase image="/ux-dev-portfolio/BUILD.png" title="03." onHover={() => handleHover(t('about-me-viii'), t('about-me-ix'))} onLeave={handleMouseLeave} />
+                </div>
+                <div className={`transition-opacity duration-500 ease-in  ${isHovering ? 'opacity-100' : 'opacity-0'} bg-red rounded-md mr-8 ms-2 mt-4 sm:max-w-xl p-2`}>
+                  <p className="px-3 py-1 font-bold text-m sm:text-xl font-main font-bold text-pink">{hoveredPhase.title}</p>
+                  <p className="px-3 pb-2 text-m font-main text-pink">{hoveredPhase.description}</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div className="sm:px-10 sm:px-[100px] mt-10">
-        <p className="my-10 font-main sm:text-xl text-m">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+        <div>
+          <p className="my-10 font-main sm:text-xl text-m">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+        </div>
       </div>
       <div className="mt-60">
         <Footer />
