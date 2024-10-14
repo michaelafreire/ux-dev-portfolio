@@ -25,9 +25,8 @@ function Introduction() {
           <button className="hover:text-white btn text-m text-red font-main transition duration-500 ease-out" onClick={() => changeLanguage('en')}>English</button>
           <button className="hover:text-white btn text-m text-red font-main ml-2 transition duration-500 ease-out" onClick={() => changeLanguage('sp')}>Español</button>
         </div>
-        <div className="p-8 sm:pl-10 sm:pl-[100px] sm:pr-[100px]">
-          <div className="min-h-screen flex items-center justify-start">
-            <div ref={ref1} className={`transition-translate ease-in duration-500 ${isVisible1 ? "translate-x-0" : "-translate-x-10"}`}>
+        <div className="p-8 sm:pl-10 sm:pl-[100px] sm:pr-[100px] min-h-screen bg-pink flex items-center justify-start">
+            <div ref={ref1} className={`transition-translate ease-in duration-500`}>
               <p className="font-main text-red text-m sm:text-xl">{t('intro-i')}</p>
               <h1 className="font-libre font-bold text-red text-3xl my-3 sm:text-8xl">Michaela Freire.</h1>
               <p className="font-main text-red text-m sm:text-xl">{t('intro-ii')}</p>
@@ -41,7 +40,6 @@ function Introduction() {
                   website="mailto:michaela.freiregriffith@gmail.com"
                 />
               </div>
-            </div>
           </div>
         </div>
       </div>

@@ -24,6 +24,7 @@ function ProjectContainer() {
           img="/ux-dev-portfolio/ITS-I.png"
           imgName="Espacio ITS"
           logo="/ux-dev-portfolio/ITS-LOGO.png"
+          link="/ux-dev-portfolio/espacio-its"
         />
         <ProjectIntro
           name={t('send-ey')}
@@ -31,6 +32,7 @@ function ProjectContainer() {
           img="/ux-dev-portfolio/SENDEY-I.png"
           imgName={t('send-ey')}
           logo="/ux-dev-portfolio/SENDEY-LOGO.png"
+          link="/ux-dev-portfolio/sendey"
         />
         <ProjectIntro
           name="Best Vet"
@@ -38,6 +40,7 @@ function ProjectContainer() {
           img="/ux-dev-portfolio/BESTVET-I.png"
           imgName="Best Vet"
           logo="/ux-dev-portfolio/BESTVET-LOGO.png"
+          link="/ux-dev-portfolio/best-vet"
         />
         <ProjectIntro
           name="Vivid Brands"
@@ -45,6 +48,7 @@ function ProjectContainer() {
           img="/ux-dev-portfolio/BS-I.png"
           imgName="Vivid Brands"
           logo="/ux-dev-portfolio/BS-LOGO.png"
+          link="/ux-dev-portfolio/vivid-brands"
         />
         <ProjectIntro
           name="Best Petsitter"
@@ -52,6 +56,7 @@ function ProjectContainer() {
           img="/ux-dev-portfolio/BESTPETSITTER-I.png"
           imgName="Best Petsitter"
           logo="/ux-dev-portfolio/BESTPETSITTER-LOGO.png"
+          link="/ux-dev-portfolio/best-petsitter"
         />
       </div>
     </div>
