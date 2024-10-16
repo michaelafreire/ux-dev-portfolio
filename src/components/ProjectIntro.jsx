@@ -8,7 +8,7 @@ function ProjectIntro(props) {
 
   return (
       <Link to={props.link} ref={ref1}
-        className= {`overflow-hidden flex grid grid-cols-2 gap-4 relative transition-translate ease-in duration-500 ${isVisible1 ? "translate-x-0" : "-translate-x-6"} rounded-md bg-white h-80 shadow-md sm:col-span-3 relative m-3`}
+        className= {`overflow-hidden flex grid grid-cols-2 gap-4 relative transition-translate ease-in duration-500 ${isVisible1 ? "translate-x-0" : "-translate-x-6"} rounded-md bg-white hover:bg-pink-60 h-80 shadow-md sm:col-span-3 relative m-3`}
       >
         <div className="col-span-1">
           <p className="font-main font-bold text-black text-m sm:text-xl pt-8 pl-8 bt-3">{props.name}</p>

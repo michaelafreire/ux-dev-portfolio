@@ -31,16 +31,6 @@ function Navbar() {
     i18n.changeLanguage(lng);
   };
 
-  const changeColor = () => {
-    if (window.scrollY >= 350) {
-      setColour(true);
-    } else {
-      setColour(false);
-    }
-  }
-
-  window.addEventListener('scroll', changeColor);
-
   //dropdown menu visibility
   const [menuOpen, setMenuOpen] = useState(false);
 

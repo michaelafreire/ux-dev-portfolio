@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from "react-router-dom"
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import { useTranslation } from 'react-i18next';
 import Navbar from './components/Navbar.jsx';
@@ -13,6 +13,7 @@ import BestVet from './components/BestVet.jsx';
 import VividBrands from './components/VividBrands.jsx';
 import BestPetsitter from './components/BestPetsitter.jsx';
 import Banner from './components/Banner.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
     const { t, i18n } = useTranslation();
@@ -23,6 +24,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/ux-dev-portfolio/" element={ <Introduction /> } />
         <Route path="/ux-dev-portfolio/about-me" element={ <AboutMe /> } />
