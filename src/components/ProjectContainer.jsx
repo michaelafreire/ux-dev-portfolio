@@ -19,7 +19,7 @@ function ProjectContainer() {
       </div> */}
       <div className="pl-10 pr-10 sm:pl-[100px] sm:pr-[100px] lg:grid lg:grid-cols-6 gap-10">
         <ProjectIntro
-          name="Espacio ITS"
+          name="its. Online Learning Platform"
           description="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
           img="/ux-dev-portfolio/ITS-I.png"
           imgName="Espacio ITS"

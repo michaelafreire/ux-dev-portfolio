@@ -11,16 +11,52 @@ function EspacioIts() {
 
   return (
     <div id="espacio-its">
-      <ProjectDescription name="Espacio ITS" description="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"/>
+      <ProjectDescription name="its. Online Learning Platform" description="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"/>
       <div className="p-8 sm:pl-10 sm:pl-[100px] sm:pr-[100px]">
         <div className="py-10 sm:py-20 flex justify-start items-center">
-          <p className="font-libre text-red text-xl sm:text-3xl font-bold">{t('intro-vi')}</p>
+          <p className="font-libre text-red text-xl sm:text-3xl font-bold">Background</p>
         </div>
         <p className="font-main sm:text-xl text-m">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
         <div className="py-10 sm:py-20 h-2/3 flex items-center justify-center">
           <ProjectCard
-          videoSrc="/ux-dev-portfolio/videos/ESPACIO ITS.mp4"
-          description={t('espacio-its-description')}
+            imageSrc="/ux-dev-portfolio/ITS-VII.png"
+            description={t('espacio-its-description')}
+          />
+        </div>
+        <div className="py-10 sm:py-20 flex justify-start items-center">
+          <p className="font-libre text-red text-xl sm:text-3xl font-bold">Research</p>
+        </div>
+        <p className="font-main sm:text-xl text-m">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+        <div className="py-10 sm:py-20 h-2/3 flex items-center justify-center">
+          <ProjectCard
+            imageSrc="/ux-dev-portfolio/ITS-V.png"
+            description={t('espacio-its-description')}
+          />
+        </div>
+        <div className="py-10 sm:py-20 flex justify-start items-center">
+          <p className="font-libre text-red text-xl sm:text-3xl font-bold">Design</p>
+        </div>
+        <p className="font-main sm:text-xl text-m">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+        <div className="py-10 sm:py-20 h-2/3 flex items-center justify-center">
+          <ProjectCard
+            imageSrc="/ux-dev-portfolio/ITS-II.png"
+            description={t('espacio-its-description')}
+          />
+        </div>
+        <div className="py-10 sm:py-20 h-2/3 flex items-center justify-center">
+          <ProjectCard
+            imageSrc="/ux-dev-portfolio/ITS-III.png"
+            description={t('espacio-its-description')}
+          />
+        </div>
+        <div className="py-10 sm:py-20 flex justify-start items-center">
+          <p className="font-libre text-red text-xl sm:text-3xl font-bold">Outcome</p>
+        </div>
+        <p className="font-main sm:text-xl text-m">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+        <div className="py-10 sm:py-20 h-2/3 flex items-center justify-center">
+          <ProjectCard
+            videoSrc="/ux-dev-portfolio/videos/ESPACIO ITS.mp4"
+            description={t('espacio-its-description')}
           />
         </div>
       </div>

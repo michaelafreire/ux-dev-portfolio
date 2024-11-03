@@ -35,6 +35,7 @@ function App() {
         <Route path="/ux-dev-portfolio/best-vet" element={ <BestVet /> } />
         <Route path="/ux-dev-portfolio/vivid-brands" element={ <VividBrands /> } />
         <Route path="/ux-dev-portfolio/best-petsitter" element={ <BestPetsitter /> } />
+        <Route path="*" element={<Introduction />} />
       </Routes>
     </div>
   )
