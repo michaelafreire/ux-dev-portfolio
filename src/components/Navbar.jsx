@@ -12,9 +12,9 @@ function DropDownMenu() {
 
   return (
     <div className="space-y-1 px-2 pb-3 pt-2">
-      <Link to="/ux-dev-portfolio/about-me" className="block my-0 ps-1 pt-1 text-red text-m font-main hover:text-white">{t('navbar-i')}</Link>
-      <Link to="/ux-dev-portfolio/projects" className="block my-0 ps-1 text-red text-m font-main hover:text-white">{t('navbar-ii')}</Link>
-      <Link to="/ux-dev-portfolio/contact" className="block my-0 ps-1 text-red text-m font-main hover:text-white">{t('navbar-iii')}</Link>
+      <Link to="/ux-dev-portfolio/about-me" className="block my-0 ps-1 pt-5 text-black text-m font-main hover:text-red">{t('navbar-i')}</Link>
+      <Link to="/ux-dev-portfolio/projects" className="block my-0 ps-1 text-black text-m font-main hover:text-red">{t('navbar-ii')}</Link>
+      <Link to="/ux-dev-portfolio/contact" className="block my-0 ps-1 text-black text-m font-main hover:text-red">{t('navbar-iii')}</Link>
     </div>
   )
 }
@@ -39,14 +39,14 @@ function Navbar() {
   };
 
   return (
-    <nav className= "bg-pink opacity-80 fixed w-full top-0 z-50">
+    <nav className= "bg-white opacity-90 fixed w-full top-0 z-50">
       <div className="mx-auto px-2 sm:px-6">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* <!-- Mobile menu button--> */}
             <button
               type="button"
-              className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-red focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded={menuOpen}
               onClick={toggleMenu} // Add onClick handler
@@ -65,16 +65,14 @@ function Navbar() {
             {menuOpen && <DropDownMenu />} {/* Conditionally render DropDownMenu */}
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
-            <div className="flex flex-shrink-0 items-center">
-              <Link to="/ux-dev-portfolio/">
-                <img className="h-8 w-auto" src="/ux-dev-portfolio/Favicon.svg" alt="Logo" />
-              </Link>
+            <div className="sm:flex flex-shrink-0 items-center">
+            <Link to="/ux-dev-portfolio/" ref={ref1} className={`rounded-md px-3 py-2 text-black text-xl font-libre font-bold hover:text-red transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>Michaela Freire</Link>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">
-                <Link to="/ux-dev-portfolio/about-me" ref={ref1} className={`rounded-md px-3 py-2 text-red text-m font-main hover:text-white transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-i')}</Link>
-                <Link to="/ux-dev-portfolio/projects" ref={ref2} className={`rounded-md px-3 py-2 text-red text-m font-main hover:text-white transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-ii')}</Link>
-                <Link to="/ux-dev-portfolio/contact" ref={ref3} className={`rounded-md px-3 py-2 text-red text-m font-main hover:text-white transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-iii')}</Link>
+                <Link to="/ux-dev-portfolio/about-me" ref={ref1} className={`rounded-md px-3 py-2 text-black text-m font-libre hover:text-red transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-i')}</Link>
+                <Link to="/ux-dev-portfolio/projects" ref={ref2} className={`rounded-md px-3 py-2 text-black text-m font-libre hover:text-red transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-ii')}</Link>
+                <Link to="/ux-dev-portfolio/contact" ref={ref3} className={`rounded-md px-3 py-2 text-black text-m font-libre hover:text-red transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-iii')}</Link>
               </div>
             </div>
           </div>

@@ -2,39 +2,60 @@ import React, { useRef } from 'react';
 import { useIsVisible } from '../hooks/useIsVisible';
 import { Link } from 'react-router-dom';
 
-function ProjectIntro(props) {
-  const ref1 = useRef();
-  const isVisible1 = useIsVisible(ref1);
+function ProjectIntro({ link, backgroundImage, name, description, logo }) {
+  const ref = useRef();
+  const isVisible = useIsVisible(ref);
 
   return (
-      <Link to={props.link} ref={ref1}
-        className= {`overflow-hidden flex grid grid-cols-2 gap-4 relative transition-translate ease-in duration-500 ${isVisible1 ? "translate-x-0" : "-translate-x-6"} rounded-md bg-white hover:bg-pink-60 h-80 shadow-md sm:col-span-3 relative m-3`}
-      >
-        <div className="col-span-1">
-          <p className="font-main font-bold text-black text-m sm:text-xl pt-8 pl-8 bt-3">{props.name}</p>
-          <p className="font-main text-black text-m sm:text-xl pl-8 pt-3">{props.description}</p>
-        </div>
-        <div className="relative w-full h-full col-span-1">
-          <div className="absolute bottom-4 right-4 bg-cover w-52 h-52 sm:w-64 sm:h-64 md:h-72 md:w-72 lg:h-80 lg:w-80"
-          style={{
-            backgroundImage: `url(${props.img})`,
-            backgroundPosition: 'left-bottom',
-            backgroundSize: 'contain',
-            backgroundRepeat: 'no-repeat',
-          }}
-          >
-          </div>
-        </div>
-        <div className="absolute -top-8 right-4 w-20 h-20"
+    <Link
+      to={link}
+      ref={ref}
+      className={`group transition-transform duration-500 ease-out ${
+        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'
+      }`}
+    >
+      {/* Card Container */}
+      <div className="my-4 bg-white rounded-2xl shadow-lg overflow-hidden max-w-sm mx-auto">
+        {/* Image Area */}
+        <div className="relative h-60 sm:h-72 overflow-hidden">
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-105"
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+          />
+
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition duration-300" />
+
+          {/* Arrow (bottom right) */}
+          <div
+            className="absolute bottom-4 right-4 w-10 h-10 sm:w-12 sm:h-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             style={{
-            backgroundImage: `url(${props.logo})`,
-            backgroundSize: 'contain',
-            backgroundRepeat: 'no-repeat',
-          }}
-          >
+              backgroundImage: `url(/ux-dev-portfolio/Next.png)`,
+              backgroundSize: 'cover',
+              backgroundRepeat: 'no-repeat',
+            }}
+          />
+
+          {/* Logo (top left) */}
+          <div
+            className="absolute top-4 left-4 w-10 h-10 sm:w-12 sm:h-12 bg-no-repeat bg-contain"
+            style={{ backgroundImage: `url(${logo})` }}
+          />
         </div>
-      </Link>
-  )
+
+        {/* White Text Area Below Image */}
+        <div className="p-4">
+          <h3 className="text-black font-main text-lg sm:text-xl font-semibold mb-1">
+            {name}
+          </h3>
+          <p className="text-gray-600 text-sm font-main line-clamp-3">
+            {description}
+          </p>
+        </div>
+      </div>
+    </Link>
+  );
 }
 
-export default ProjectIntro
+export default ProjectIntro;

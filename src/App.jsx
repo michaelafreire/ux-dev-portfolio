@@ -11,9 +11,12 @@ import SendEy from './components/SendEy.jsx';
 import EspacioIts from './components/EspacioIts.jsx';
 import BestVet from './components/BestVet.jsx';
 import VividBrands from './components/VividBrands.jsx';
-import BestPetsitter from './components/BestPetsitter.jsx';
 import Banner from './components/Banner.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import PyramidApp from './components/PyramidApp.jsx';
+import CursorTrail from './components/CursorTrail.jsx';
 
 function App() {
     const { t, i18n } = useTranslation();
@@ -22,7 +25,8 @@ function App() {
     };
 
   return (
-    <div className="App">
+    <div className="App relative">
+      <CursorTrail />
       <Navbar />
       <ScrollToTop />
       <Routes>
@@ -34,7 +38,7 @@ function App() {
         <Route path="/ux-dev-portfolio/espacio-its" element={ <EspacioIts /> } />
         <Route path="/ux-dev-portfolio/best-vet" element={ <BestVet /> } />
         <Route path="/ux-dev-portfolio/vivid-brands" element={ <VividBrands /> } />
-        <Route path="/ux-dev-portfolio/best-petsitter" element={ <BestPetsitter /> } />
+        <Route path="/ux-dev-portfolio/pyramid-app" element={ <PyramidApp /> } />
         <Route path="*" element={<Introduction />} />
       </Routes>
     </div>

@@ -1,28 +1,30 @@
 import ProjectDescription from './ProjectDescription';
-import ProjectCard from './ProjectCard';
 import Footer from './Footer';
-import { useTranslation } from 'react-i18next';
+import { useTranslation, Trans } from 'react-i18next';
+import ProjectTitle from './ProjectTitle';
+import ProjectText from './ProjectText';
+import ProjectTextImage from './ProjectTextImage';
+import ProjectTextImageHmw from './ProjectTextImageHmw';
+
 
 function BestVet() {
-  const { t, i18n } = useTranslation();
-  const changeLanguage = lng => {
+  const { t } = useTranslation();
+  const { i18n } = useTranslation();  const changeLanguage = lng => {
     i18n.changeLanguage(lng);
   };
 
   return (
     <div id="best-vet">
-      <ProjectDescription name="Best Vet" description="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"/>
+      <ProjectDescription
+        name={t("best-vet-i")}
+        description={<Trans i18nKey="best-vet-ii" components={{ strong: <strong className=""/> }} />}
+        role={t("best-vet-role")}
+        tools="Ruby on Rails, HTML, CSS, JavaScript, PostgreSQL, Bootstrap, Figma"
+        methods={t("best-vet-methods")}
+        team={t("best-vet-team")}
+        />
       <div className="p-8 sm:pl-10 sm:pl-[100px] sm:pr-[100px]">
-        <div className="py-10 sm:py-20 flex justify-start items-center">
-          <p className="font-libre text-red text-xl sm:text-3xl font-bold">{t('intro-vi')}</p>
-        </div>
-        <p className="font-main sm:text-xl text-m">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
-        <div className="py-10 sm:py-20 h-2/3 flex items-center justify-center">
-          <ProjectCard
-          videoSrc="/ux-dev-portfolio/videos/ESPACIO ITS.mp4"
-          description={t('espacio-its-description')}
-          />
-        </div>
+        <p className="font-main sm:text-xl text-m">{t("best-vet-construction")}🐶🐱</p>
       </div>
       <div className="mt-60">
         <Footer />

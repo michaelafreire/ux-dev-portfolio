@@ -6,16 +6,16 @@ export default {
   ],
   theme: {
     colors: {
-      'pink': '#e6ddde',
-      'pink-60': 'rgba(230, 221, 222, 0.6)', // Add the new pink color with 80% opacity
-      'red': '#6a0e0c',
-      'black': '#010101',
-      'white': '#ffffff',
-      'grey': '#e4e0e0',
+      'red-60': '#d42e75', // Add the new pink color with 80% opacity
+      'red': '#d42e75',
+      'black': '#1e1c1c',
+      'white': '#fafafa',
+      'grey': '#ededec',
+      'grey-30': '#f2720c',
     },
     fontFamily: {
-      main: ['Open Sans', 'sans-serif'],
-      libre: ['Libre Baskerville', 'serif'], // Add the new font here
+      main: ['Space Grotesk', 'sans-serif'],
+      libre: ['Savate', 'sans-serif'], // Add the new font here
     },
   },
   plugins: [],
