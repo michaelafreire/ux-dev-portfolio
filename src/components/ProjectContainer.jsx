@@ -25,6 +25,11 @@ function ProjectContainer() {
           logo="/ux-dev-portfolio/ITS-LOGO.png"
           link="/ux-dev-portfolio/espacio-its"
           backgroundImage="/ux-dev-portfolio/ITS-BG.png"
+          tag1="user research"
+          tag2="ux design"
+          tag3="usability testing"
+          tag4="prototyping"
+          tag5="edtech"
         />
         <ProjectIntro
           name={t('sendey-i')}
@@ -32,6 +37,11 @@ function ProjectContainer() {
           logo="/ux-dev-portfolio/SENDEY-LOGO.png"
           link="/ux-dev-portfolio/sendey"
           backgroundImage="/ux-dev-portfolio/SENDEY-BG.png"
+          tag1="user research"
+          tag2="co-design"
+          tag3="prototyping"
+          tag4="policy"
+          tag5="digital service"
         />
         <ProjectIntro
           name={t('vivid-i')}
@@ -40,6 +50,11 @@ function ProjectContainer() {
           logo="/ux-dev-portfolio/BS-LOGO.png"
           link="/ux-dev-portfolio/vivid-brands"
           backgroundImage="/ux-dev-portfolio/VIVID-BG.png"
+          tag1="user research"
+          tag2="co-design"
+          tag3="market research"
+          tag4="workshops"
+          tag5="strategy"
         />
         <ProjectIntro
           name={t('pyramid-app-i')}
@@ -48,6 +63,11 @@ function ProjectContainer() {
           logo="/ux-dev-portfolio/PYRAMID-APP-LOGO.png"
           link="/ux-dev-portfolio/pyramid-app"
           backgroundImage="/ux-dev-portfolio/PYRAMID-APP-BG.png"
+          tag1="physiological data"
+          tag2="quantitative research"
+          tag3="ui design"
+          tag4="edtech"
+          tag5=""
         />
         <ProjectIntro
           name={t('best-vet-i')}
@@ -56,6 +76,11 @@ function ProjectContainer() {
           logo="/ux-dev-portfolio/BESTVET-LOGO.png"
           link="/ux-dev-portfolio/best-vet"
           backgroundImage="/ux-dev-portfolio/BESTVET-BG.png"
+          tag1="product design"
+          tag2="ui design"
+          tag3="full stack development"
+          tag4="database design"
+          tag5=""
         />
       </div>
     </div>

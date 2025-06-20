@@ -13,7 +13,7 @@ const resources = {
       "navbar-iii": "Contact",
       // Introduction Section
       "intro-i": "Hi, I'm",
-      "intro-ii": "I’m a human-centered design researcher passionate about understanding users, turning insights into action, and creating meaningful impact.",
+      "intro-ii": "I’m a human-centered design researcher passionate about understanding people, turning insights into action, and creating meaningful impact.",
       "intro-iii": "I’m a multidisciplinary design researcher with 7+ years of experience working at the intersection of technology, social impact, and innovation. My background spans startups, government organizations, NGOs, and academia, giving me a broad perspective on how to uncover real user needs and translate them into practical, human-centered solutions. I specialize in rigorous qualitative and quantitative research methods and collaborative design processes, helping multidisciplinary teams build products and services that truly resonate with users.",
       "intro-iii-3": "I’m currently pursuing a master’s degree in Cognitive Systems and Interactive Media at Universitat Pompeu Fabra in Barcelona, continuing to explore how technology and human behaviour intersect. My goal is to craft human-centered solutions grounded in evidence and empathy, creating lasting value for users and communities. Let’s build something meaningful together!",
       "intro-iv": "Say hi",
@@ -248,7 +248,7 @@ const resources = {
       "navbar-iii": "Contacto",
       //Introduction Section
       "intro-i": "Hola, soy",
-      "intro-ii": "Soy una investigadora de diseño centrado en el ser humano, apasionada por comprender a los usuarios, convertir ideas en acción y generar un impacto significativo.",
+      "intro-ii": "Soy una investigadora de diseño centrado en el ser humano, apasionada por comprender a las personas, convertir ideas en acción y generar un impacto significativo.",
       "intro-iii": "Soy una investigadora multidisciplinaria de diseño con más de 7 años de experiencia trabajando en la intersección de tecnología, impacto social e innovación. Mi experiencia abarca startups, organizaciones gubernamentales, ONG y el mundo académico, lo que me brinda una perspectiva amplia sobre cómo descubrir las verdaderas necesidades de los usuarios y traducirlas en soluciones prácticas y centradas en las personas. Me especializo en métodos rigurosos de investigación cualitativa y cuantitativa, así como en procesos colaborativos de diseño, ayudando a equipos multidisciplinarios a construir productos y servicios que realmente conectan con los usuarios.",
       "intro-iii-3": "Actualmente curso una maestría en Sistemas Cognitivos y Medios Interactivos en la Universitat Pompeu Fabra en Barcelona, continuando la exploración de cómo interactúan la tecnología y el comportamiento humano. Mi objetivo es crear soluciones centradas en las personas, basadas en evidencia y empatía, generando valor duradero para usuarios y comunidades. ¡Construyamos algo significativo juntos!",
       "intro-iv": "Saluda",
@@ -466,7 +466,7 @@ const resources = {
       "contact": "Contacto",
       "contact-i": "Me encantaría saber de ti. Ponte en contacto por <email>email</email> o <linkedin>Linkedin</linkedin>. Además, siéntete libre de consultar mi <cv>CV</cv> o mis <latest>últimos projetos</latest>.",
       // Footer Section
-      "collaborate": "Colaboremos.",
+      "collaborate": "Colaboremos. ",
       "built": "Desarrollado con React",
     }
   },

@@ -12,6 +12,7 @@ export default {
       'white': '#fafafa',
       'grey': '#ededec',
       'grey-30': '#f2720c',
+      'red-20': "rgba(212, 46, 117, 0.2)"
     },
     fontFamily: {
       main: ['Space Grotesk', 'sans-serif'],

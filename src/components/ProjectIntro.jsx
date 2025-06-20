@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import { useIsVisible } from '../hooks/useIsVisible';
 import { Link } from 'react-router-dom';
+import Tag from './Tag';
 
-function ProjectIntro({ link, backgroundImage, name, description, logo }) {
+function ProjectIntro({ link, backgroundImage, name, description, logo, tag1, tag2, tag3, tag4, tag5 }) {
   const ref = useRef();
   const isVisible = useIsVisible(ref);
 
@@ -52,6 +53,11 @@ function ProjectIntro({ link, backgroundImage, name, description, logo }) {
           <p className="text-gray-600 text-sm font-main line-clamp-3">
             {description}
           </p>
+          <Tag tag={tag1} />
+          <Tag tag={tag2} />
+          <Tag tag={tag3} />
+          <Tag tag={tag4} />
+          <Tag tag={tag5} />
         </div>
       </div>
     </Link>
