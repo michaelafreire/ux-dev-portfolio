@@ -11,10 +11,11 @@ function DropDownMenu() {
   };
 
   return (
-    <div className="space-y-1 px-2 pb-3 pt-2">
-      <Link to="/ux-dev-portfolio/about-me" className="block my-0 ps-1 pt-5 text-black text-m font-main hover:text-red">{t('navbar-i')}</Link>
-      <Link to="/ux-dev-portfolio/projects" className="block my-0 ps-1 text-black text-m font-main hover:text-red">{t('navbar-ii')}</Link>
-      <Link to="/ux-dev-portfolio/contact" className="block my-0 ps-1 text-black text-m font-main hover:text-red">{t('navbar-iii')}</Link>
+    <div className="px-2 pb-3 pt-2 mt-4">
+      <Link to="/ux-dev-portfolio/about-me" className="block m-0 ps-1 pt-5 text-black text-sm sm:text-m font-main hover:text-red">{t('navbar-i')}</Link>
+      <Link to="/ux-dev-portfolio/projects" className="block m-0 ps-1 text-black text-sm sm:text-m font-main hover:text-red">{t('navbar-ii')}</Link>
+      <Link to="/ux-dev-portfolio/playground" className="block m-0 ps-1 text-black text-sm sm:text-m font-main hover:text-red">{t('navbar-iv')}</Link>
+      <Link to="/ux-dev-portfolio/contact" className="block m-0 ps-1 text-black text-sm sm:text-m font-main hover:text-red">{t('navbar-iii')}</Link>
     </div>
   )
 }
@@ -72,6 +73,7 @@ function Navbar() {
               <div className="flex space-x-4">
                 <Link to="/ux-dev-portfolio/about-me" ref={ref1} className={`rounded-md px-3 py-2 text-black text-m font-libre hover:text-red transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-i')}</Link>
                 <Link to="/ux-dev-portfolio/projects" ref={ref2} className={`rounded-md px-3 py-2 text-black text-m font-libre hover:text-red transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-ii')}</Link>
+                <Link to="/ux-dev-portfolio/playground" ref={ref3} className={`rounded-md px-3 py-2 text-black text-m font-libre hover:text-red transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-iv')}</Link>
                 <Link to="/ux-dev-portfolio/contact" ref={ref3} className={`rounded-md px-3 py-2 text-black text-m font-libre hover:text-red transition duration-500 ease-out transition-translate ease-in ${isVisible1 ? "translate-y-0" : "translate-y-6"}`}>{t('navbar-iii')}</Link>
               </div>
             </div>

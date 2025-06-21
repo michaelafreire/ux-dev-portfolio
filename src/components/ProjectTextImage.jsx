@@ -13,7 +13,11 @@ function ProjectTextImage(props) {
         videoSrc={props.video}
         barSrc={props.bar}
         description={
-          <Trans i18nKey={props.text} components={{ strong: <strong /> }} />
+          <Trans i18nKey={props.text}
+            components={{
+              strong: <strong />,
+              a: <a className="text-black underline hover:text-red transition-colors" target="_blank" rel="noopener noreferrer" />
+            }} />
         }
       />
   </div>

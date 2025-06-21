@@ -4,14 +4,17 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 const resources = {
   en: {
     translation: {
-      // General
+      // #region General
       "case study": "Case Study",
       "methods": "Methods",
-      // Navbar
+      // #endregion
+      // #region Navbar
       "navbar-i": "About Me",
       "navbar-ii": "Projects",
       "navbar-iii": "Contact",
-      // Introduction Section
+      "navbar-iv": "Playground",
+      // #endregion
+      // #region Introduction Section
       "intro-i": "Hi, I'm",
       "intro-ii": "I’m a human-centered design researcher passionate about understanding people, turning insights into action, and creating meaningful impact.",
       "intro-iii": "I’m a multidisciplinary design researcher with 7+ years of experience working at the intersection of technology, social impact, and innovation. My background spans startups, government organizations, NGOs, and academia, giving me a broad perspective on how to uncover real user needs and translate them into practical, human-centered solutions. I specialize in rigorous qualitative and quantitative research methods and collaborative design processes, helping multidisciplinary teams build products and services that truly resonate with users.",
@@ -19,7 +22,8 @@ const resources = {
       "intro-iv": "Say hi",
       "intro-v": "Curriculum vitae",
       "intro-vi": "Selected work",
-      // About Me Section
+      // #endregion
+      // #region About Me Section
       "skills-i": "User Research",
       "skills-ii": "Data Analysis",
       "skills-iii": "Prototyping",
@@ -32,7 +36,8 @@ const resources = {
       "about-me-vii": "I have led user-centered design projects in varied environments, guiding co-creation workshops and iterative prototyping to translate complex research into practical solutions. My approach consistently centers user needs and fosters clear communication with stakeholders throughout the process.",
       "about-me-viii": "Technical Fluency",
       "about-me-ix": "Through completing the Le Wagon Bootcamp in full-stack development and applying Python for data analysis during my academic studies, I bring solid technical skills. This allows me to prototype efficiently, analyze data rigorously, and collaborate effectively with engineering and design teams.",
-      // Timeline
+      // #endregion
+      // #region Timeline
       "timeline-i": "My career at a glance",
       "timeline-ii": "Research Staff",
       "timeline-date-ii": "Feb 2025 - Present",
@@ -76,15 +81,18 @@ const resources = {
       "timeline-study-iii": "BSc in Politics and Sociology",
       "timeline-study-date-iii": "Sept 2015 - Jun 2018",
       "timeline-study-org-iii": "University of Bristol",
-      // Project Section
+      // #endregion
+      // #region Project Section
       "contact-i": "I'd love to hear from you. Reach out via <email>email</email> or <linkedin>Linkedin</linkedin>. Also, feel free to check out my <cv>CV</cv> or my <latest>latest projects</latest>.",
       "projects": "Projects",
       "projects-i": "Throughout my career, I’ve applied user-centered approaches to solve meaningful challenges across a variety of fields. Here are some of my latest projects.",
-      // Project Description
+      // #endregion
+      // #region Project Description
       "role": "Role",
       "tools": "Tools",
       "team": "Team",
-      // ITS
+      // #endregion
+      // #region ITS
       "espacio-its-i": "Designing a Learning Platform for—and with—Peruvian Educators",
       "espacio-its-ii": "While at <a>Innova Teaching School</a>, I led a research and design initiative to develop a digital platform to support <strong>Peruvian teachers in their professional development</strong>. Through interviews, surveys, and iterative prototyping, we identified key learning barriers and translated insights into a flexible, expert-informed solution - recognized by Intercorp as a Transformative Initiative.",
       "espacio-its-methods": "Qualitative interviews, literature review, quantitative survey, usability testing, card sorting,  wireframing, iterative prototyping",
@@ -129,7 +137,8 @@ const resources = {
       "espacio-its-xxiv": "Overall, this platform provides three key benefits: it offers <strong>easy navigation</strong> and <strong>centralized information</strong>, provides <strong>credible and adaptable resources</strong>, and facilitates in-depth learning through <strong>expert interactions</strong>.",
       "espacio-its-xxv": "Outcome",
       "espacio-its-xxvi": "The project was halted prior to entering production due to pandemic-related consequences. However, despite this setback, it proved to be invaluable as the insights gained provided a profound understanding of our users, applicable to various initiatives across the organization. Furthermore, our efforts were recognized by Intercorp, leading to our selection as one of their Transformative Initiatives for the 2021 Innovation Fair. This recognition led us to participate in a learning and acceleration program alongside industry leaders from IDEO, La Victoria Lab, and Colectivo23.",
-      // SEND EY
+      // #endregion
+      // #region SEND EY
       "sendey-i": "Co-Designing a SEND Navigation Tool for UK Families",
       "sendey-ii": "Families navigating early years (EY) special educational needs and disabilities (SEND) childcare and education in the UK often face complex and confusing barriers. At the Education Policy Innovation Centre (EPIC) in the UK Department for Education, I led project delivery and contributed directly to user research and co-design. Working with a cross-functional team, we identified key pain points through interviews, journey mapping, and literature reviews, and co-designed a prototype parental pathway to help families more easily access vital SEND services.",
       "sendey-iii": "Delivery Manager and Interdisciplinary Contributor | Led project delivery while actively contributing to research and co-design through note-taking, insight synthesis, benchmark analysis, workshop facilitation, co-authoring outputs, and helping develop the prototype",
@@ -146,14 +155,16 @@ const resources = {
       "sendey-xi-b": "We analysed the co-design data and built a <strong>first prototype</strong>. This prototype was then refined based on feedback from a workshop with the policy team.",
       "sendey-xiv": "Outcome",
       "sendey-xv": "Based on our research and co-design activities, we created a <strong>prototype</strong> for a <strong>parental pathway to simplify parental navigation of the EY SEND system</strong>. This product, <strong>directly informed</strong> and <strong>designed by insights from parents and providers</strong>, could serve the objective of streamlining existing processes and helping parents navigate key services and procedures more effectively and confidently. Moreover, the prototype in its current version only serves as an early visualisation of the service: both its content and design require further refinement to ensure it effectively meets user needs and offers intuitive navigation.",
-      // BEST VET
+      // #endregion
+      // #region BEST VET
       "best-vet-role": "Full Stack Developer | Contributed to product design, development, and deployment",
       "best-vet-methods": "Product design, user stories, database design, version control, full stack development",
       "best-vet-team": "4 full stack developers (including myself)",
       "best-vet-i": "Building an Accessible Veterinary Care Platform",
       "best-vet-ii": "As our final project for Le Wagon's coding bootcamp, my team and I developed <strong>Best Vet</strong>, a <strong>platform</strong> that <strong>connects pet owners with veterinarians for accessible and affordable veterinary care</strong>. My contributions spanned product design, database management, and end-to-end development, ensuring a seamless and accessible user experience.",
       "best-vet-construction": "I'm under construction - coming soon",
-      // VIVID BRANDS
+      // #endregion
+      // #region VIVID BRANDS
       "vivid-role": "Design Researcher",
       "vivid-description": "As a Design Researcher, I helped <strong>Vivid Brands</strong> reimagine their identity and digital presence by uncovering what drives user connection in e-commerce. Through user research, co-design, market analysis and collaborative ideation, we developed a user-informed brand and web strategy that shaped their rebranding.",
       "vivid-i": "Brand Strategy Rooted in User Insight",
@@ -192,7 +203,8 @@ const resources = {
       "vivid-xxv": "The sitemap was further developed into a <strong>wireflow diagram</strong>, mapping out functionalities and user interactions to ensure a seamless digital experience.",
       "vivid-xxvi": "Outcome",
       "vivid-xxvii": "I successfully delivered a <strong>comprehensive brand</strong> and <strong>web strategy</strong>, which the Brainstorming team used as the foundation for the brand’s rebranding. Additionally, I enhanced the organisation's understanding of its users and developed a clear web structure, which was later refined and developed by the design and production team.",
-      // PYRAMID APP
+      // #endregion
+      // #region PYRAMID APP
       "pyramid-app-i": "Designing for Cognitive Ease in EdTech",
       "pyramid-app-ii": "A multi-method UX study integrating physiological metrics, validated research tools, and participant self-reflection to evaluate and redesign <a><strong>PyramidApp</strong></a> — a collaborative learning platform. Conducted as part of the <i>Learning Technologies</i> course during my master's in Cognitive Systems and Interactive Media at Universitat Pompeu Fabra.",
       "pyramid-app-role": "User research & interface design",
@@ -230,23 +242,64 @@ const resources = {
       "pyramid-app-xxiv": "To support real-time collaboration, we proposed integrating a synchronous editing feature—similar to tools like Google Docs—which has been shown to facilitate effective group work (Ivarsson, 2019). Enhancing the platform with lightweight interaction features, such as comments or emojis, could also encourage engagement and support peer-to-peer feedback. To reduce social pressure, contributions could be visualized using a color-coded editing system that attributes content without ranking it, offering transparency without judgment. Additionally, to relieve time-related stress, we suggested allowing users to request extensions directly within the tool or encouraging educators to create activities without strict time limits.",
       "pyramid-app-xxv": "Outcomes",
       "pyramid-app-xxvi": "The findings of this study highlight the importance of considering the interplay between user experience, usability, cognitive demand, techno-stress, and digital well-being in the design of learning technologies. By addressing these factors, we can create more effective and supportive tools that enhance collaboration and engagement while minimizing stress and cognitive load. The proposed design enhancements for PyramidApp aim to improve its usability and user experience, ultimately fostering a more intuitive and less stressful learning environment.",
-      // Contact Section
+      // #endregion
+      // #region Playground
+      "playground": "Playground",
+      "playground-intro": "Welcome to my Portfolio Playground! A space for experimentation, exploration, and learning through side projects and academic work. Here, I try things out—some messy, some polished—all driven by curiosity.",
+      // #endregion
+      // #region Space Safari
+      "space-safari": "Space Safari: AR Interactive Ride Prototype",
+      "space-safari-intro": "<strong>Theme park ride concept using augmented reality and Wizard-of-Oz simulation</strong><br><br>For the final project for the course <i>Education, Games and Leisure</i> in my master's program, we were asked to design and run a simulation of a theme park dark ride. Our concept, Space Safari, takes visitors on a journey through space to photograph alien species—building a collection in an <i>Alienopedia</i> app that tracks their discoveries and scores.",
+      "space-safari-video": "To simulate the experience, we created immersive space videos that were projected onto surrounding walls, giving the illusion of space travel.",
+      "space-safari-ar": "Also, I developed a working prototype of an AR screen using HTML, CSS, and JavaScript. Some aliens were only visible through the AR lens, encouraging visitors to actively engage with their surroundings.",
+      "space-safari-app": "I also designed a Figma prototype of the <i>Alienopedia</i> companion app, allowing visitors to track their scores and collection of alien species.",
+      // #endregion
+      // #region Social Norms
+      "social-norms-title": "Modeling Altruism in Complex Societies",
+      "social-norms-intro": "<strong>Coded an AI simulation based on how expectations and norms shape altruistic behavior</strong><br><br> In <i>The Emergence of Altruism as a Social Norm</i>, Pereda et al. (2017) examine how generosity can emerge in large societies without enforcement, using the Dictator Game. They propose a model based on reinforcement learning and expectation updating. I replicated this model in Python and tested various iterations, including the introduction of noise, envious agents and a selfish agent. Check it out <a href='https://colab.research.google.com/drive/1yK5mDIJDXlEe_UC0OJt4kke1JJ_73AKA?usp=sharing'>here</a>.",
+      // #endregion
+      // #region Animaltopia
+      "animaltopia-title": "AR Pet Creator: Storyboard Concept",
+      "animaltopia-intro": "<strong>Storyboard for an augmented reality experience to design custom pets</strong><br><br> As part of the <i>Interaction Design</i> course in my master’s program, I created a storyboard for an AR experience aimed at children. In this experience, kids create and customize holographic pets. With no budget constraints, we had full creative freedom to explore ambitious and imaginative concepts.",
+      // #endregion
+      // #region MiniPeople
+      "minipeople-title": "MiniPeople: E-commerce Site for a Toy Brand",
+      "minipeople-intro": "<strong>Designed and built an e-commerce site with playful, parent-focused UI</strong><br><br>I built an e-commerce website for a Peruvian baby toy brand using Shopify. The interface features a gentle, pastel-toned UI that reflects the brand’s soft and playful identity—designed to resonate with parents shopping for their little ones. Check it out <a href='https://minipeoplepe.myshopify.com/'>here</a>.",
+      // #endregion
+      // #region Corruption
+      "corruption-title": "Data Analysis: Corruption & Accountability",
+      "corruption-intro": "<strong>Exploring the relationship between corruption and civic voice using Python</strong><br><br>  I used World Bank governance indicators to investigate how corruption correlates with voice and accountability. My work included descriptive analysis, linear regression and predictive modeling using Python and Pandas. I found that corruption is negatively correlated with civic voice, and that countries with higher levels of corruption tend to have lower levels of accountability. Check out my full analysis <a href='https://www.kaggle.com/code/michaelafreire/capstone-project-corruption-vs-voice'>here</a>.",
+      // #endregion
+      // #region Corazones Gatunos
+      "corazones-gatunos-title": "Cat Adoption NGO: Social Media Content",
+      "corazones-gatunos-intro": "<strong>Designed social media assets for a cat adoption NGO in Peru</strong><br><br>I created visual and written content to help raise awareness for a local cat adoption NGO. The posts aimed to increase visibility, promote adoption, and drive engagement.",
+      // #endregion
+      // #region Skinny Dip
+      "skinny-dip-title": "Skinny Dip: Promo Landing Page",
+      "skinny-dip-intro": "<strong>Created a React-based landing page for an end-of-season sale</strong><br><br>Designed and built a simple React landing page to promote Skinny Dip's seasonal bikini sale. Check it out <a href='https://skinnydipperu.com/'>here</a>.",
+      // #endregion
+      // #region Contact Section
       "contact": "Contact",
-      // Footer Section
+      // #endregion
+      // #region Footer Section
       "built": "Built with React",
       "collaborate": "Let's collaborate.",
+      // #endregion
     }
   },
   sp: {
     translation: {
-      // General
+      // #region General
       "case study": "Estudio de caso",
       "methods": "Métodos",
-      // Navbar
+      // #endregion
+      // #region Navbar
       "navbar-i": "Sobre Mí",
       "navbar-ii": "Proyectos",
       "navbar-iii": "Contacto",
-      //Introduction Section
+      "navbar-iv": "Laboratorio",
+      // #endregion
+      //#region Introduction Section
       "intro-i": "Hola, soy",
       "intro-ii": "Soy una investigadora de diseño centrado en el ser humano, apasionada por comprender a las personas, convertir ideas en acción y generar un impacto significativo.",
       "intro-iii": "Soy una investigadora multidisciplinaria de diseño con más de 7 años de experiencia trabajando en la intersección de tecnología, impacto social e innovación. Mi experiencia abarca startups, organizaciones gubernamentales, ONG y el mundo académico, lo que me brinda una perspectiva amplia sobre cómo descubrir las verdaderas necesidades de los usuarios y traducirlas en soluciones prácticas y centradas en las personas. Me especializo en métodos rigurosos de investigación cualitativa y cuantitativa, así como en procesos colaborativos de diseño, ayudando a equipos multidisciplinarios a construir productos y servicios que realmente conectan con los usuarios.",
@@ -254,7 +307,8 @@ const resources = {
       "intro-iv": "Saluda",
       "intro-v": "Currículum vitae",
       "intro-vi": "Trabajos seleccionados",
-      // About Me Section
+      // #endregion
+      // #region About Me Section
       "skills-i": "Investigación de Usuarios",
       "skills-ii": "Análisis de Datos",
       "skills-iii": "Prototipado",
@@ -267,7 +321,8 @@ const resources = {
       "about-me-vii": "He liderado proyectos de diseño centrados en el usuario en entornos variados, guiando talleres de co-creación y prototipos iterativos para traducir investigaciones complejas en soluciones prácticas. Mi enfoque siempre pone en el centro las necesidades del usuario y fomenta una comunicación clara con los interesados durante todo el proceso.",
       "about-me-viii": "Fluidez Técnica",
       "about-me-ix": "Tras completar el Bootcamp de Le Wagon en desarrollo full-stack y aplicar Python para análisis de datos durante mis estudios académicos, aporto sólidas habilidades técnicas. Esto me permite prototipar eficientemente, analizar datos rigurosamente y colaborar efectivamente con equipos de ingeniería y diseño.",
-      // Timeline
+      // #endregion
+      // #region Timeline
       "timeline-i": "Mi carrera en resumen",
       "timeline-ii": "Investigadora",
       "timeline-date-ii": "Feb 2025 - Presente",
@@ -311,14 +366,17 @@ const resources = {
       "timeline-study-iii": "Licenciatura en Ciencias Políticas y Sociología",
       "timeline-study-date-iii": "Sep 2015 - Jun 2018",
       "timeline-study-org-iii": "University of Bristol",
-      // Project Section
+      // #endregion
+      // #region Project Section
       "projects": "Proyectos",
       "projects-i": "A lo largo de mi carrera, he aplicado enfoques centrados en el usuario para resolver desafíos significativos en una variedad de campos. Aquí tienes algunos de mis últimos proyectos.",
-      // Project Description
+      // #endregion
+      // #region Project Description
       "role": "Rol",
       "tools": "Herramientas",
       "team": "Equipo",
-      // ITS
+      // #endregion
+      // #region ITS
       "espacio-its-i": "Diseñando una plataforma de aprendizaje para —y con— educadores peruanos",
       "espacio-its-ii": "Durante mi tiempo en <a>Innova Teaching School</a>, lideré una iniciativa de investigación y diseño para desarrollar una plataforma digital que apoyara a <strong>docentes peruanos en su desarrollo profesional</strong>. A través de entrevistas, encuestas y prototipos iterativos, identificamos barreras clave para el aprendizaje y traducimos los hallazgos en una solución flexible e informada por expertos — reconocida por Intercorp como una Iniciativa Transformadora.",
       "espacio-its-methods": "Entrevistas cualitativas, revisión de literatura, encuesta cuantitativa, pruebas de usabilidad, card sorting, wireframes, prototipado iterativo",
@@ -363,7 +421,8 @@ const resources = {
       "espacio-its-xxiv": "En general, esta plataforma brinda tres beneficios clave: ofrece <strong>navegación sencilla</strong> e <strong>información centralizada</strong>, proporciona <strong>recursos confiables y adaptables</strong> y facilita el aprendizaje profundo a través de <strong>interacciones con expertos</strong>.",
       "espacio-its-xxv": "Resultados",
       "espacio-its-xxvi": "El proyecto fue detenido antes de entrar en producción debido a las consecuencias de la pandemia. Sin embargo, a pesar de este contratiempo, resultó invaluable, ya que los insights obtenidos proporcionaron una comprensión profunda de nuestros usuarios, aplicable a diversas iniciativas dentro de la organización. Además, nuestros esfuerzos fueron reconocidos por Intercorp, lo que llevó a nuestra selección como una de sus Iniciativas Transformadoras en la Feria de Innovación 2021. Este reconocimiento nos permitió participar en un programa de aprendizaje y aceleración junto a líderes de la industria de IDEO, La Victoria Lab y Colectivo23.",
-      // SEND EY
+      // #endregion
+      // #region SEND EY
       "sendey-i": "Co-diseñando una herramienta de navegación NEE para familias del Reino Unido",
       "sendey-ii": "Las familias que buscan atención y educación en la primera infancia para niñas y niños con necesidades educativas especiales (NEE) en el Reino Unido suelen enfrentar barreras complejas y confusas. En el Education Policy Innovation Centre (EPIC) del Departamento de Educación del Reino Unido, lideré la implementación del proyecto y contribuí directamente a la investigación con personas usuarias y al co-diseño. Junto a un equipo interdisciplinario, identificamos puntos críticos mediante entrevistas, mapeo de recorridos y revisión de literatura, y co-diseñamos un prototipo de ruta para madres y padres que facilite el acceso a servicios esenciales para NEE.",
       "sendey-iii": "Responsable de implementación y colaboradora interdisciplinaria | Gestioné la ejecución del proyecto y contribuí a la investigación y el diseño mediante la toma de notas, análisis, revisión de literatura, coautoría de entregables y desarrollo del prototipo",
@@ -377,15 +436,17 @@ const resources = {
       "sendey-ix": "Resumen del proceso",
       "sendey-x": "Comenzamos con una investigación exploratoria, que incluyó <strong>revisiones de literatura</strong>, <strong>entrevistas semi-estructuradas</strong> con padres y proveedores, <strong>mapeo de experiencias</strong> y <strong>ejercicios de elicitación fotográfica</strong>. A partir de esta investigación, identificamos las necesidades de los participantes y sus ideas para mejoras. Luego revisamos estos hallazgos en un taller de ideación con el equipo de políticas. Durante este taller, evaluamos tres soluciones potenciales propuestas tanto por padres como por proveedores y decidimos colectivamente desarrollar más una de ellas: una <strong>hoja de rutas parental para simplificar la navegación en el complejo sistema EY NEED</strong>.",
       "sendey-xi": "A continuación, realizamos <strong>sesiones de co-diseño</strong> presenciales y remotas con padres y proveedores para desarrollar aún más esta idea, <strong>investigamos con dos autoridades locales</strong> y consultamos con el <strong>grupo de asesores expertos del DfE</strong> para validar nuestra idea.",
-      "sendey-xi-b":" Analizamos los datos del co-diseño y construimos un <strong>primer prototipo</strong>. Luego, este prototipo se refinó en base a la retroalimentación de un taller con el equipo de políticas.",
+      "sendey-xi-b": " Analizamos los datos del co-diseño y construimos un <strong>primer prototipo</strong>. Luego, este prototipo se refinó en base a la retroalimentación de un taller con el equipo de políticas.",
       "sendey-xiv": "Resultado",
       "sendey-xv": "Basándonos en nuestra investigación y actividades de co-diseño, creamos un <strong>prototipo</strong> de una <strong>hoja de rutas parental para simplificar la navegación de los padres en el sistema EY NEED</strong>. Este producto, <strong>diseñado directamente con ideas obtenidas de padres y proveedores</strong>, podría servir para optimizar los procesos existentes y ayudar a los padres a navegar los servicios y procedimientos clave de manera más efectiva y con mayor confianza. Además, el prototipo en su versión actual solo representa una primera visualización del servicio: tanto su contenido como su diseño requieren más refinamiento para garantizar que satisfaga eficazmente las necesidades de los usuarios y ofrezca una navegación intuitiva.",
-      // BEST VET
+      // #endregion
+      // #region BEST VET
       "best-vet-role": "Desarrolladora Full Stack",
       "best-vet-i": "Construyendo una Plataforma de Atención Veterinaria Accesible",
       "best-vet-ii": "Como proyecto final para el bootcamp de programación Le Wagon, mi equipo y yo desarrollamos <strong>Best Vet</strong>, una <strong>plataforma</strong> que <strong>conecta a los dueños de mascotas con veterinarios para atención veterinaria accesible y asequible</strong>. Me desempeñé como Desarrolladora Full Stack, contribuyendo al desarrollo del proyecto desde la ideación hasta la implementación.",
       "best-vet-construction": "Estoy en construcción - próximamente",
-      // VIVID BRANDS
+      // #endregion
+      // #region VIVID BRANDS
       "vivid-role": "Investigadora de diseño",
       "vivid-description": "Como investigadora de diseño, ayudé a <strong>Vivid Brands</strong> a reimaginar su identidad y presencia digital descubriendo qué motiva la conexión con los usuarios en el comercio electrónico. A través de investigación de usuarios, co-diseño, análisis de mercado e ideación colaborativa, desarrollamos una estrategia de marca y web basada en el usuario que definió su rebranding.",
       "vivid-i": "Estrategia de marca basada en el conocimiento del usuario",
@@ -424,7 +485,8 @@ const resources = {
       "vivid-xxv": "El mapa del sitio se desarrolló aún más en un <strong>diagrama de wireflow</strong>, mapeando funcionalidades e interacciones del usuario para garantizar una experiencia digital fluida.",
       "vivid-xxvi": "Resultado",
       "vivid-xxvii": "Entregué con éxito una <strong>estrategia integral de marca</strong> y <strong>estrategia web</strong>, que el equipo de Brainstorming utilizó como base para el rebranding de la marca. Además, mejoré la comprensión de la organización sobre sus usuarios y desarrollé una estructura web clara, que posteriormente fue refinada y desarrollada por el equipo de diseño y producción.",
-      // PYRAMID APP
+      // #endregion
+      // #region PYRAMID APP
       "pyramid-app-i": "Diseñando para la facilidad cognitiva en EdTech",
       "pyramid-app-ii": "Un estudio de UX multimétodo que integra métricas fisiológicas, herramientas de investigación validadas y autorreflexión de los participantes para evaluar y rediseñar <a><strong>PyramidApp</strong></a> — una plataforma de aprendizaje colaborativo. Realizado como parte del curso <i>Tecnologías del Aprendizaje</i> durante mi maestría en Sistemas Cognitivos y Medios Interactivos en la Universitat Pompeu Fabra.",
       "pyramid-app-role": "Investigación de usuarios y diseño de interfaz",
@@ -462,12 +524,51 @@ const resources = {
       "pyramid-app-xxiv": "Para apoyar la colaboración en tiempo real, propusimos integrar una función de edición sincronizada—similar a herramientas como Google Docs—que ha demostrado facilitar el trabajo efectivo en grupo (Ivarsson, 2019). Mejorar la plataforma con funciones de interacción ligeras, como comentarios o emojis, también podría fomentar el compromiso y apoyar la retroalimentación entre pares. Para reducir la presión social, las contribuciones podrían visualizarse usando un sistema de edición codificado por colores que atribuya contenido sin clasificarlo, ofreciendo transparencia sin juicio. Además, para aliviar el estrés relacionado con el tiempo, sugerimos permitir que los usuarios soliciten extensiones directamente dentro de la herramienta o animar a los educadores a crear actividades sin límites de tiempo estrictos.",
       "pyramid-app-xxv": "Resultados",
       "pyramid-app-xxvi": "Los hallazgos de este estudio resaltan la importancia de considerar la interacción entre la experiencia de usuario, la usabilidad, la demanda cognitiva, el tecnoestrés y el bienestar digital en el diseño de tecnologías de aprendizaje. Al abordar estos factores, podemos crear herramientas más efectivas y de apoyo que mejoren la colaboración y el compromiso, minimizando el estrés y la carga cognitiva. Las mejoras de diseño propuestas para PyramidApp tienen como objetivo mejorar su usabilidad y experiencia de usuario, fomentando en última instancia un entorno de aprendizaje más intuitivo y menos estresante.",
-      // Contact Section
+      // #endregion
+      // #region Playground
+      "playground": "Laboratorio",
+      "playground-intro": "¡Bienvenidos al Laboratorio de mi portafolio! Un espacio para experimentar, explorar y aprender a través de proyectos paralelos y trabajos académicos. Aquí pruebo cosas—algunas desordenadas, otras pulidas—todas impulsadas por la curiosidad.",
+      // #endregion
+      // #region Space Safari
+      "space-safari": "Space Safari: Prototipo Interactivo AR a Gran Escala",
+      "space-safari-intro": "<strong>Concepto de atracción de parque temático usando realidad aumentada y simulación Wizard-of-Oz</strong><br><br>Para el proyecto final del curso <i>Educación, Juegos y Ocio</i> en mi maestría, nos pidieron diseñar y ejecutar una simulación de un <i>dark ride</i> para un parque temático. Nuestro concepto, Space Safari, lleva a los visitantes en un viaje espacial para fotografiar especies alienígenas—construyendo una colección en una app <i>Alienopedia</i> que registra sus descubrimientos y puntuaciones.",
+      "space-safari-video": "Para simular la experiencia, creamos videos inmersivos del espacio que se proyectaban en las paredes y suelos, dando la ilusión de viajar por el espacio.",
+      "space-safari-ar": "También desarrollé un prototipo funcional de una pantalla AR usando HTML, CSS y JavaScript. Algunos alienígenas sólo eran visibles a través del lente AR, incentivando a los visitantes a interactuar activamente con su entorno.",
+      "space-safari-app": "Además, diseñé un prototipo en Figma de la app compañera <i>Alienopedia</i>, permitiendo a los visitantes registrar sus puntuaciones y colección de especies alienígenas.",
+      // #endregion
+      // #region Social Norms
+      "social-norms-title": "Modelando el Altruismo en Sociedades Complejas",
+      "social-norms-intro": "<strong>Codifiqué una simulación de IA basada en cómo las expectativas y normas moldean el comportamiento altruista</strong><br><br>En <i>The Emergence of Altruism as a Social Norm</i>, Pereda et al. (2017) examinan cómo la generosidad puede emerger en grandes sociedades sin imposición, usando el Juego del Dictador. Proponen un modelo basado en aprendizaje por refuerzo y actualización de expectativas. Répliqué este modelo en Python y probé varias iteraciones, incluyendo ruido, agentes envidiosos y un agente egoísta. Échale un vistazo <a href='https://colab.research.google.com/drive/1yK5mDIJDXlEe_UC0OJt4kke1JJ_73AKA?usp=sharing'>aquí</a>.",
+      // #endregion
+      // #region Animaltopia
+      "animaltopia-title": "Creador de Mascotas AR: Concepto de Storyboard",
+      "animaltopia-intro": "<strong>Storyboard para una experiencia de realidad aumentada para diseñar mascotas personalizadas</strong><br><br>Como parte del curso de <i>Interaction Design</i> en mi maestría, creé un storyboard para una experiencia AR dirigida a niños. En esta experiencia, los niños crean y personalizan mascotas holográficas. Sin limitaciones de presupuesto, tuvimos plena libertad creativa para explorar conceptos ambiciosos e imaginativos.",
+      // #endregion
+      // #region MiniPeople
+      "minipeople-title": "MiniPeople: E-commerce para una Marca de Juguetes",
+      "minipeople-intro": "<strong>Diseñé y construí un sitio e-commerce con una interfaz amigable y enfocada en padres</strong><br><br>Construí un sitio web de comercio electrónico para una marca peruana de juguetes para bebés usando Shopify. La interfaz presenta un diseño suave y en tonos pastel que refleja la identidad tierna y juguetona de la marca—diseñada para resonar con padres que compran para sus pequeños. Échale un vistazo <a href='https://minipeoplepe.myshopify.com/'>aquí</a>.",
+      // #endregion
+      // #region Corruption
+      "corruption-title": "Análisis de Datos: Corrupción y Voz Ciudadana",
+      "corruption-intro": "<strong>Explorando la relación entre corrupción y voz ciudadana usando Python</strong><br><br>Usé indicadores de gobernanza del Banco Mundial para investigar cómo la corrupción se correlaciona con la voz ciudadna y la rendición de cuentas de gobernanza. Mi trabajo incluyó análisis descriptivo, regresión lineal y modelado predictivo usando Python y Pandas. Encontré que la corrupción se correlaciona negativamente con la voz ciudadana, y que los países con mayores niveles de corrupción tienden a tener menores niveles de rendición de cuentas de gobernanza. Consulta mi análisis completo <a href='https://www.kaggle.com/code/michaelafreire/capstone-project-corruption-vs-voice'>aquí</a>.",
+      // #endregion
+      // #region Corazones Gatunos
+      "corazones-gatunos-title": "Contenido de Redes Sociales para ONG de Adopción de Gatos",
+      "corazones-gatunos-intro": "<strong>Diseñé materiales para redes sociales para una ONG de adopción de gatos en Perú</strong><br><br>Creé contenido visual y escrito para ayudar a crear conciencia para una ONG local de adopción de gatos. Las publicaciones buscaban aumentar la visibilidad, promover la adopción y fomentar la interacción.",
+      // #endregion
+      // #region Skinny Dip
+      "skinny-dip-title": "Skinny Dip: Página Promocional",
+      "skinny-dip-intro": "<strong>Creé una página landing en React para una venta de fin de temporada</strong><br><br>Diseñé y desarrollé una página landing simple en React para promover la venta de bikinis de temporada de Skinny Dip. Échale un vistazo <a href='https://skinnydipperu.com/'>aquí</a>.",
+      // #endregion
+      // #endregion
+      // #region Contact Section
       "contact": "Contacto",
       "contact-i": "Me encantaría saber de ti. Ponte en contacto por <email>email</email> o <linkedin>Linkedin</linkedin>. Además, siéntete libre de consultar mi <cv>CV</cv> o mis <latest>últimos projetos</latest>.",
-      // Footer Section
+      // #endregion
+      // #region Footer Section
       "collaborate": "Colaboremos. ",
       "built": "Desarrollado con React",
+      // #endregion
     }
   },
 };

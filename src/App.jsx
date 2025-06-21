@@ -17,6 +17,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import PyramidApp from './components/PyramidApp.jsx';
 import CursorTrail from './components/CursorTrail.jsx';
+import Playground from './components/Playground.jsx';
 
 function App() {
     const { t, i18n } = useTranslation();
@@ -39,6 +40,7 @@ function App() {
         <Route path="/ux-dev-portfolio/best-vet" element={ <BestVet /> } />
         <Route path="/ux-dev-portfolio/vivid-brands" element={ <VividBrands /> } />
         <Route path="/ux-dev-portfolio/pyramid-app" element={ <PyramidApp /> } />
+        <Route path="/ux-dev-portfolio/playground" element={ <Playground /> } />
         <Route path="*" element={<Introduction />} />
       </Routes>
     </div>
