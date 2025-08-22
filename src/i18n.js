@@ -206,7 +206,7 @@ const resources = {
       // #endregion
       // #region PYRAMID APP
       "pyramid-app-i": "Designing for Cognitive Ease in EdTech",
-      "pyramid-app-ii": "A multi-method UX study integrating physiological metrics, validated research tools, and participant self-reflection to evaluate and redesign <a><strong>PyramidApp</strong></a> — a collaborative learning platform. Conducted as part of the <i>Learning Technologies</i> course during my master's in Cognitive Systems and Interactive Media at Universitat Pompeu Fabra.",
+      "pyramid-app-ii": "A multi-method UX study integrating physiological metrics, validated research tools, and participant self-reflection to evaluate and redesign <a><strong>PyramidApp</strong></a> — a collaborative learning platform.",
       "pyramid-app-role": "User research & interface design",
       "pyramid-app-methods": "Mixed methods: physiological data, quantitative questionnaires, qualitative observations",
       "pyramid-app-team": "Three design researchers (including myself)",
@@ -488,7 +488,7 @@ const resources = {
       // #endregion
       // #region PYRAMID APP
       "pyramid-app-i": "Diseñando para la facilidad cognitiva en EdTech",
-      "pyramid-app-ii": "Un estudio de UX multimétodo que integra métricas fisiológicas, herramientas de investigación validadas y autorreflexión de los participantes para evaluar y rediseñar <a><strong>PyramidApp</strong></a> — una plataforma de aprendizaje colaborativo. Realizado como parte del curso <i>Tecnologías del Aprendizaje</i> durante mi maestría en Sistemas Cognitivos y Medios Interactivos en la Universitat Pompeu Fabra.",
+      "pyramid-app-ii": "Un estudio de UX multimétodo que integra métricas fisiológicas, herramientas de investigación validadas y autorreflexión de los participantes para evaluar y rediseñar <a><strong>PyramidApp</strong></a> — una plataforma de aprendizaje colaborativo.",
       "pyramid-app-role": "Investigación de usuarios y diseño de interfaz",
       "pyramid-app-methods": "Métodos mixtos: datos fisiológicos, cuestionarios cuantitativos, observaciones cualitativas",
       "pyramid-app-team": "Tres investigadoras de diseño (incluyéndome)",
